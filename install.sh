@@ -42,6 +42,25 @@ echo "  ✓ Ledger system initialized"
 echo "⚙️  Installing global configuration..."
 cp task-registry.json "$HOME/.claude/"
 cp agent-protocols.md "$HOME/.claude/"
+
+# Install mandatory global workflow
+echo "🚨 Installing MANDATORY global workflow..."
+cp CLAUDE.md "$HOME/.claude/"
+cp memory.md "$HOME/.claude/"
+echo "  ✓ Mandatory workflow installed"
+
+# Install settings template with enforcement hooks
+echo "🔒 Setting up workflow enforcement..."
+if [ ! -f "$HOME/.claude/settings.json" ]; then
+    echo "  Installing settings with enforcement hooks..."
+    cp settings-template.json "$HOME/.claude/settings.json"
+    echo "  ✓ New settings.json created with mandatory hooks"
+else
+    echo "  ⚠️  Existing settings.json found"
+    echo "  You may need to manually add the hook configuration from settings-template.json"
+    echo "  See WORKFLOW_ENFORCEMENT_VALIDATION.md for details"
+fi
+
 echo "  ✓ Global configuration installed"
 
 # Initialize global observation ledger if it doesn't exist
@@ -71,10 +90,18 @@ echo "  - Global ledger: $([ -f "$HOME/.claude/global-observation/observation-le
 echo "  - Task registry: $([ -f "$HOME/.claude/task-registry.json" ] && echo "Ready" || echo "Error")"
 echo ""
 echo "🚀 Your Claude Code Multi-Agent System is ready!"
-echo "   The agents will be available in all your Claude Code projects."
+echo "   🚨 MANDATORY WORKFLOW ENFORCEMENT IS NOW ACTIVE!"
+echo "   The agentic workflow will apply to EVERY interaction automatically."
+echo ""
+echo "✨ New Features Installed:"
+echo "   • Automatic workflow enforcement (cannot be bypassed)"
+echo "   • Control-agent mandatory delegation"
+echo "   • Hook-based prompt injection"
+echo "   • Universal application across all projects"
 echo ""
 echo "💡 Next steps:"
 echo "   1. Restart Claude Code if it's running"
-echo "   2. Use the /agents command to see your installed agents"
-echo "   3. Start a new project - the Improvement Agent will activate automatically!"
+echo "   2. Try ANY prompt - the workflow will activate automatically"
+echo "   3. Watch as control-agent delegates to specialized agents"
+echo "   4. See WORKFLOW_ENFORCEMENT_VALIDATION.md for testing guidelines"
 echo ""

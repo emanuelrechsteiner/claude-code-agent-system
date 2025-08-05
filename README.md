@@ -1,6 +1,16 @@
-# Claude Code Multi-Agent System
+# Claude Code Multi-Agent System - MANDATORY GLOBAL WORKFLOW
 
-A sophisticated multi-agent system for Claude Code that provides intelligent development assistance with continuous learning and improvement capabilities.
+A sophisticated multi-agent system for Claude Code that provides intelligent development assistance with **mandatory workflow enforcement**, automatic agent delegation, and continuous learning capabilities.
+
+## 🚨 NEW: MANDATORY GLOBAL WORKFLOW ENFORCEMENT
+
+**This system now includes MANDATORY workflow enforcement that applies to EVERY interaction:**
+
+- **Automatic Activation**: Workflow applies to all prompts without user request
+- **Cannot Be Bypassed**: Works regardless of prompt content
+- **Universal Application**: Active across ALL projects and sessions
+- **Mandatory Delegation**: Control-agent MUST delegate, never execute directly
+- **Hook-Based Enforcement**: Automatic injection of workflow context
 
 ## 🌟 Overview
 
@@ -130,6 +140,13 @@ cp global-observation/observation-ledger.json ~/.claude/global-observation/
 
 ## 🎯 Features
 
+### 🚨 MANDATORY WORKFLOW ENFORCEMENT
+- **Automatic Hook Injection**: Every prompt triggers workflow enforcement
+- **Cannot Be Bypassed**: Applies regardless of user request
+- **Control-Agent Delegation**: Automatic delegation to specialized agents
+- **Universal Application**: Works across ALL projects and sessions
+- **Memory Integration**: Persistent workflow awareness
+
 ### Continuous Learning
 - Every project contributes to the global knowledge base
 - Patterns emerge across multiple implementations
@@ -139,6 +156,7 @@ cp global-observation/observation-ledger.json ~/.claude/global-observation/
 - Task distribution through ledger system
 - Dependency tracking and management
 - Quality gates at every stage
+- **Mandatory reporting protocols** between agents
 
 ### Two-Layer Improvement System
 - **Project Layer**: Silent observation during development
@@ -150,6 +168,7 @@ cp global-observation/observation-ledger.json ~/.claude/global-observation/
 - Works across all Claude Code projects
 - Persistent knowledge accumulation
 - Shared learning between projects
+- **Enforced consistency** across all environments
 
 ## 📊 How It Works
 
