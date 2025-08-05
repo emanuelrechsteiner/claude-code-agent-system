@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Update backlog with detailed task breakdown following template workflow",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create development timeline document",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Create MVP definition document",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Create technical specifications document",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Create Firebase setup guide",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  }
+]

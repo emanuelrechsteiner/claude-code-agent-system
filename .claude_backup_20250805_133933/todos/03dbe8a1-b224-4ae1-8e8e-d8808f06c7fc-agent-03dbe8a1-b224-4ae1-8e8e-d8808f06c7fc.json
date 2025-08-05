@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Find all PDF files in root directory",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Extract invoice amounts from each PDF",
+    "status": "pending",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Calculate total sum of all invoices",
+    "status": "pending",
+    "priority": "high",
+    "id": "3"
+  }
+]

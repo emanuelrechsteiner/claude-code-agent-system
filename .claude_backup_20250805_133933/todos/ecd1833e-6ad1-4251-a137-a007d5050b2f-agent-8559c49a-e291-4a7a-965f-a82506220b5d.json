@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Update CLAUDE.md with ShadCN component information and frontend architecture",
+    "status": "completed",
+    "priority": "high",
+    "id": "doc-1"
+  },
+  {
+    "content": "Create FRONTEND_REDESIGN.md with complete redesign overview and migration details",
+    "status": "completed",
+    "priority": "high",
+    "id": "doc-2"
+  },
+  {
+    "content": "Update README.md with ShadCN setup instructions and design system info",
+    "status": "completed",
+    "priority": "high",
+    "id": "doc-3"
+  },
+  {
+    "content": "Create COMPONENT_GUIDE.md with ShadCN usage patterns and best practices",
+    "status": "completed",
+    "priority": "high",
+    "id": "doc-4"
+  }
+]

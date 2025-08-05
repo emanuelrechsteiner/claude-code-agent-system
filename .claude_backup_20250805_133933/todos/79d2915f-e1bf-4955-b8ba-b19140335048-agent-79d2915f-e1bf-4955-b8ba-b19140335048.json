@@ -1,0 +1,50 @@
+[
+  {
+    "content": "Fix direct localStorage usage in useAssessmentData.ts - Replace all 4 instances with crossDeviceStorage",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Test iOS Safari private browsing functionality after fixing storage calls",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Audit remaining components for any other direct localStorage usage",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Verify navigation state persistence on iOS Safari",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Test storage warning banner appears correctly in private browsing",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Validate assessment flow works end-to-end in iOS private browsing",
+    "status": "completed",
+    "priority": "high",
+    "id": "6"
+  },
+  {
+    "content": "Add enhanced memory management for iOS if needed",
+    "status": "completed",
+    "priority": "low",
+    "id": "7"
+  },
+  {
+    "content": "Document iOS private browsing support and testing procedures",
+    "status": "completed",
+    "priority": "low",
+    "id": "8"
+  }
+]

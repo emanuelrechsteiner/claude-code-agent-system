@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Analyze all screenshots for UI/UX issues and Apple HIG compliance",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Check for overflow problems, cut-off text, and readability issues",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Review scroll depth and layout consistency",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Fix identified UI/UX problems in frontend code",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Ensure responsive design works across different screen sizes",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  }
+]

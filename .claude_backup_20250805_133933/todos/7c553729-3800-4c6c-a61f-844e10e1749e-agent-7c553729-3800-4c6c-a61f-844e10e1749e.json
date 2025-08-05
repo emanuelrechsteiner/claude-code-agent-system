@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Explain global agent implementation options",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Show user-level agent installation",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Demonstrate global configuration management",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Provide migration strategy from project to global",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  }
+]

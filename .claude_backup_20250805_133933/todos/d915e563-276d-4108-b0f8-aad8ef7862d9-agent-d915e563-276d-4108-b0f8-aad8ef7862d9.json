@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Audit current footer links and identify functionality gaps",
+    "status": "pending",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create newsletter subscription page",
+    "status": "pending",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Create research studies page with citations",
+    "status": "pending",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Create contact page with GDPR-compliant data protection",
+    "status": "pending",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Update footer with proper navigation and remove unused links",
+    "status": "pending",
+    "priority": "high",
+    "id": "5"
+  },
+  {
+    "content": "Test all new pages and navigation functionality",
+    "status": "pending",
+    "priority": "medium",
+    "id": "6"
+  }
+]

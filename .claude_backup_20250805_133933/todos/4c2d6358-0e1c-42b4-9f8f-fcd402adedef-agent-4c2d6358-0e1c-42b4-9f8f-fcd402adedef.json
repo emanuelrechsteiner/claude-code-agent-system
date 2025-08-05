@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Backup the Claude configuration file",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Test the correct Firecrawl MCP package name",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Fix the Firecrawl MCP configuration with correct package and API key",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Verify the MCP server can connect successfully",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  }
+]

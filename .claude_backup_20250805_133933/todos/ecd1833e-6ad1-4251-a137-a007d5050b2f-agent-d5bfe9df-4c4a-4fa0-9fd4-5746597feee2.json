@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Fix authentication blocking issue by separating auth state from encryption state",
+    "status": "completed",
+    "priority": "high",
+    "id": "fix-auth-encryption-separation"
+  },
+  {
+    "content": "Modify useBudgetData.ts error handling to not block authentication when encrypted data can't be accessed",
+    "status": "completed",
+    "priority": "high",
+    "id": "modify-useBudgetData-error-handling"
+  },
+  {
+    "content": "Add isDataLocked state to distinguish between needing password setup vs data being locked",
+    "status": "completed",
+    "priority": "high",
+    "id": "add-data-locked-state"
+  },
+  {
+    "content": "Update App.tsx to handle locked data state and show appropriate unlock UI",
+    "status": "completed",
+    "priority": "medium",
+    "id": "update-app-unlock-flow"
+  },
+  {
+    "content": "Test all authentication scenarios: new user, existing user with encryption, login after logout",
+    "status": "completed",
+    "priority": "medium",
+    "id": "test-authentication-flows"
+  }
+]

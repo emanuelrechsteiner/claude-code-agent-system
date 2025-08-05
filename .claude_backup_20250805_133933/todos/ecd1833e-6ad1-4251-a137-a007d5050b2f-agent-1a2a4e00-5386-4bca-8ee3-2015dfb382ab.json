@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Fix SecurityDashboard modal backdrop opacity and content background for proper contrast",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Fix Header dropdown menu background transparency to use solid backgrounds",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Test both light and dark modes for proper contrast ratios",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Verify accessibility compliance (WCAG AA 4.5:1 contrast)",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  }
+]

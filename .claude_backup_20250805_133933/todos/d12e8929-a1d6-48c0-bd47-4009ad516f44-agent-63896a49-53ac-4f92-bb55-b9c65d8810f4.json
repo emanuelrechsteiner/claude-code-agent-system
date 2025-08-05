@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Document current project state and existing implementation",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "coord-001"
+  },
+  {
+    "content": "Coordinate research-agent to analyze existing HTML prototype vs React implementation gaps",
+    "status": "pending",
+    "priority": "high",
+    "id": "coord-002"
+  },
+  {
+    "content": "Direct planning-agent to create optimization roadmap for existing codebase",
+    "status": "pending",
+    "priority": "high",
+    "id": "coord-003"
+  },
+  {
+    "content": "Coordinate frontend-agent to enhance React implementation based on findings",
+    "status": "pending",
+    "priority": "medium",
+    "id": "coord-004"
+  },
+  {
+    "content": "Direct testing-agent to create comprehensive test suite for existing components",
+    "status": "pending",
+    "priority": "medium",
+    "id": "coord-005"
+  },
+  {
+    "content": "Coordinate version-control-agent to initialize git repository and initial commit",
+    "status": "pending",
+    "priority": "low",
+    "id": "coord-006"
+  }
+]

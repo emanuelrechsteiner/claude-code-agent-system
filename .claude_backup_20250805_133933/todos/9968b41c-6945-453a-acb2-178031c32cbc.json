@@ -1,0 +1,44 @@
+[
+  {
+    "content": "Create partnerships and invitations database schema",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Implement invitation API endpoints",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Add partnership management API endpoints",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Create PartnershipManager UI component",
+    "status": "in_progress",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Create InvitationAcceptor UI component",
+    "status": "pending",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Update existing components to use partnerships",
+    "status": "pending",
+    "priority": "medium",
+    "id": "6"
+  },
+  {
+    "content": "Add partnership integration to budget system",
+    "status": "pending",
+    "priority": "low",
+    "id": "7"
+  }
+]

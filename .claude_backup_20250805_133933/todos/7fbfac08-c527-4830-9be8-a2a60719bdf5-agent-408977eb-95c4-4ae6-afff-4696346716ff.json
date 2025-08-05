@@ -1,0 +1,62 @@
+[
+  {
+    "content": "Create guest store for state management with real-time subscriptions",
+    "status": "completed",
+    "priority": "high",
+    "id": "guest-store"
+  },
+  {
+    "content": "Implement invitation types and utilities for email sending and link generation",
+    "status": "completed",
+    "priority": "high",
+    "id": "invitation-types"
+  },
+  {
+    "content": "Build GuestInvite component for sending invitations by email or generating links",
+    "status": "completed",
+    "priority": "high",
+    "id": "guest-invite-component"
+  },
+  {
+    "content": "Create GuestList component for managing attendees with real-time updates",
+    "status": "completed",
+    "priority": "high",
+    "id": "guest-list-component"
+  },
+  {
+    "content": "Build GuestCard component for displaying individual guest information and status",
+    "status": "completed",
+    "priority": "medium",
+    "id": "guest-card-component"
+  },
+  {
+    "content": "Implement InvitationForm component for bulk invitations with validation",
+    "status": "in_progress",
+    "priority": "medium",
+    "id": "invitation-form-component"
+  },
+  {
+    "content": "Update PublicRSVP page with full functionality for guest responses",
+    "status": "completed",
+    "priority": "high",
+    "id": "update-public-rsvp"
+  },
+  {
+    "content": "Create RSVP status indicators and count components",
+    "status": "completed",
+    "priority": "medium",
+    "id": "rsvp-indicators"
+  },
+  {
+    "content": "Add guest management to EventDashboard page",
+    "status": "pending",
+    "priority": "high",
+    "id": "event-dashboard-integration"
+  },
+  {
+    "content": "Implement Firebase functions for invitation emails and link validation",
+    "status": "pending",
+    "priority": "high",
+    "id": "firebase-functions"
+  }
+]

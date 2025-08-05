@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "read",
+      "Edit\nCreateFile\nReadFile\nSaveFile\nBash(npm *)\nBash(git add *)\nBash(git commit *)\nBash(git status)\nBash(git diff *)\nBash(git log *)\nBash(ls *)\nBash(cat *)\nBash(head *)\nBash(tail *)\nBash(less *)\nBash(more *)\nBash(grep *)\nBash(find *)\nBash(locate *)\nBash(mkdir *)\nBash(cp *)\nBash(mv *)\nBash(pwd)\nBash(echo *)\nBash(which *)\nBash(whereis *)\nBash(node *)\nBash(npx *)\nBash(python *)\nBash(python3 *)\nBash(pip list)\nBash(pip show *)\nBash(file *)\nBash(stat *)\nBash(wc *)\nBash(sort *)\nBash(uniq *)\nBash(diff *)",
+      "read",
+      "save",
+      "search"
+    ],
+    "deny": [
+      "dbreset",
+      "Bash(rm *)\nBash(rmdir *)\nBash(shred *)\nBash(dd *)\nBash(truncate *)\nBash(> *)",
+      "Bash(sudo *)\nBash(su *)\nBash(chmod 777 *)\nBash(chown *)\nBash(passwd *)\nBash(usermod *)\nBash(userdel *)",
+      "Bash(curl *)\nBash(wget *)\nBash(ssh *)\nBash(scp *)\nBash(rsync *)\nBash(nc *)\nBash(netcat *)\nBash(telnet *)",
+      "Bash(kill *)\nBash(killall *)\nBash(pkill *)\nBash(systemctl *)\nBash(service *)\nBash(shutdown *)\nBash(reboot *)\nBash(halt *)",
+      "Bash(mount *)\nBash(umount *)\nBash(fdisk *)\nBash(mkfs *)\nBash(fsck *)",
+      "Bash(mysql *)\nBash(psql *)\nBash(mongo *)\nBash(redis-cli *)"
+    ]
+  },
+  "feedbackSurveyState": {
+    "lastShownTime": 1754024648298
+  },
+  "model": "sonnet",
+  "$schema": "https://json.schemastore.org/claude-code-settings.json"
+}

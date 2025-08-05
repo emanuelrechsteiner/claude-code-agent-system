@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Examine how ResultsEnhanced.tsx loads data and handles storage failures",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Analyze data saving in AssessmentForm.tsx and ImportanceForm.tsx",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Review crossDeviceStorage.ts wrapped/unwrapped data handling implementation",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Locate where 'No assessment results found' error is thrown",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Examine current memory storage implementation and fallback mechanisms",
+    "status": "completed",
+    "priority": "high",
+    "id": "5"
+  }
+]

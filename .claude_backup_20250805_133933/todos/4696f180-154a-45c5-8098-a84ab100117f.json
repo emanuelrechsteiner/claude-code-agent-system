@@ -1,0 +1,50 @@
+[
+  {
+    "content": "Create Scraper directory for main web scraper app",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create DocScraper directory for documentation scraper app",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Move main scraper files to Scraper directory",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Move documentation scraper files to DocScraper directory",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Delete Scraper_RealEstate.py",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Update file paths and imports",
+    "status": "completed",
+    "priority": "high",
+    "id": "6"
+  },
+  {
+    "content": "Move shared requirements and docs to appropriate locations",
+    "status": "completed",
+    "priority": "medium",
+    "id": "7"
+  },
+  {
+    "content": "Test both apps in their new locations",
+    "status": "completed",
+    "priority": "high",
+    "id": "8"
+  }
+]

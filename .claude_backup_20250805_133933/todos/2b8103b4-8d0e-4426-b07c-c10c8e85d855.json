@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Find where 'test Useres Finanzen' is hardcoded in the UI",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Locate user data structure and how connected users are managed",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Replace hardcoded name with dynamic user first name",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Hide finance section when no user is connected",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  }
+]

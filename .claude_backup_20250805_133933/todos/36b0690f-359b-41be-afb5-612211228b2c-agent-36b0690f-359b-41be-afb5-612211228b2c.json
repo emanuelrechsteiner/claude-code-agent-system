@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Fix ImportanceForm to use Firebase-first approach",
+    "status": "completed",
+    "priority": "high",
+    "id": "7"
+  },
+  {
+    "content": "Replace all storageUtils calls with crossDeviceStorage",
+    "status": "completed",
+    "priority": "high",
+    "id": "10"
+  },
+  {
+    "content": "Remove unused StorageDebugPanel.tsx",
+    "status": "completed",
+    "priority": "medium",
+    "id": "11"
+  },
+  {
+    "content": "Consolidate duplicate data unwrapping logic in ResultsEnhanced",
+    "status": "completed",
+    "priority": "medium",
+    "id": "12"
+  }
+]

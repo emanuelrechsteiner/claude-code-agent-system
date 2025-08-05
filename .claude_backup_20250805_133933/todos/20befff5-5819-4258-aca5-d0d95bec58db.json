@@ -1,0 +1,62 @@
+[
+  {
+    "content": "Update core data structures and types",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Refactor calculation functions for dynamic users",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Update budget summary interface for dynamic partnerships",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Clean up App.tsx from hardcoded user logic",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Refactor MultiUserSummary component",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Update MultiUserBudgetTable component",
+    "status": "completed",
+    "priority": "medium",
+    "id": "6"
+  },
+  {
+    "content": "Fix AccountTabs for dynamic partnerships",
+    "status": "pending",
+    "priority": "medium",
+    "id": "7"
+  },
+  {
+    "content": "Update approval system for configurable requirements",
+    "status": "pending",
+    "priority": "medium",
+    "id": "8"
+  },
+  {
+    "content": "Add default categories and category management",
+    "status": "pending",
+    "priority": "low",
+    "id": "9"
+  },
+  {
+    "content": "Clean up server data files",
+    "status": "completed",
+    "priority": "low",
+    "id": "10"
+  }
+]

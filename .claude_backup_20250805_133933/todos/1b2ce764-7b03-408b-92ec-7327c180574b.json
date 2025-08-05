@@ -1,0 +1,62 @@
+[
+  {
+    "content": "Create main /claude.md with project overview and consent-first philosophy",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create /docs/claude-global.md with global development rules",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Create /docs/claude-development.md with React/TypeScript/Supabase patterns",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Create /docs/claude-architecture.md with Consentual business logic",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Create /src/components/claude.md with UI patterns and guidelines",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Create /src/integrations/claude.md with Supabase integration patterns",
+    "status": "completed",
+    "priority": "medium",
+    "id": "6"
+  },
+  {
+    "content": "Create /src/hooks/claude.md with custom hook patterns",
+    "status": "completed",
+    "priority": "medium",
+    "id": "7"
+  },
+  {
+    "content": "Create /supabase/claude.md with database schema and RLS policies",
+    "status": "completed",
+    "priority": "medium",
+    "id": "8"
+  },
+  {
+    "content": "Create /tests/claude.md with testing strategies for consent flows",
+    "status": "completed",
+    "priority": "low",
+    "id": "9"
+  },
+  {
+    "content": "Create /src/types/claude.md with TypeScript patterns and definitions",
+    "status": "completed",
+    "priority": "low",
+    "id": "10"
+  }
+]

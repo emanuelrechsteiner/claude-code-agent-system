@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Investigate Compare tab functionality issue",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Fix assessment selection for comparison",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Test the comparison feature",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  }
+]

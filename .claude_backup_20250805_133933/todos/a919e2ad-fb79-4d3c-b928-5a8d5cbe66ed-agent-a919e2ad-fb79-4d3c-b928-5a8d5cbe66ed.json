@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Create agent utilization checklist for app development workflow",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Document best practices for each agent type",
+    "status": "completed",
+    "priority": "medium",
+    "id": "2"
+  },
+  {
+    "content": "Create workflow templates for common development tasks",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  }
+]

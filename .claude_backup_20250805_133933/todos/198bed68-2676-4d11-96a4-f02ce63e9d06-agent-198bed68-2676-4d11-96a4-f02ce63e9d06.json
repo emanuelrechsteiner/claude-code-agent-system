@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Remove core private browsing detection files",
+    "status": "completed",
+    "priority": "high",
+    "id": "remove-core-files"
+  },
+  {
+    "content": "Remove StorageWarning component and its usage",
+    "status": "completed",
+    "priority": "high",
+    "id": "remove-storage-warning"
+  },
+  {
+    "content": "Update App.tsx to remove private browsing imports and error suppression",
+    "status": "completed",
+    "priority": "high",
+    "id": "update-app-tsx"
+  },
+  {
+    "content": "Update hooks and services to remove private browsing detection",
+    "status": "completed",
+    "priority": "high",
+    "id": "update-hooks-services"
+  },
+  {
+    "content": "Clean up warning messages in pages",
+    "status": "completed",
+    "priority": "medium",
+    "id": "clean-messages"
+  },
+  {
+    "content": "Remove private browsing test files",
+    "status": "completed",
+    "priority": "low",
+    "id": "remove-test-files"
+  }
+]

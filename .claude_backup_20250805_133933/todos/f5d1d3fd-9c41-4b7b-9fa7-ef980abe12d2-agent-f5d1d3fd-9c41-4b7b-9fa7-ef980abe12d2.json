@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Add new background variants for ST phase (Background_9.png & Background_7.png)",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create phase intro card component for clear phase separation",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Update FirstStep page with V phase backgrounds and intro card",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Update SecondStep page with ST phase backgrounds and intro card",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Update tailwind.config.js with new background image classes",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  }
+]

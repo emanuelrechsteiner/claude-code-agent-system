@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Run database policy test to check current failure state",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Examine Supabase database schema and SQL files for RLS policy configuration",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Search for SQL migration files or database setup scripts",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Look for helper functions like is_co_host() referenced in policies",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Analyze events table SELECT policies and invitation-based access control",
+    "status": "completed",
+    "priority": "high",
+    "id": "5"
+  }
+]

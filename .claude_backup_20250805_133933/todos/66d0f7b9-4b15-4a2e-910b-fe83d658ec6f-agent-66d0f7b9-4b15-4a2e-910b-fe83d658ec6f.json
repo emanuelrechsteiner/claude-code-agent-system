@@ -1,0 +1,8 @@
+[
+  {
+    "content": "Fix dark mode not applying to event creation form and other components",
+    "status": "completed",
+    "priority": "high",
+    "id": "fix-dark-mode-consistency"
+  }
+]

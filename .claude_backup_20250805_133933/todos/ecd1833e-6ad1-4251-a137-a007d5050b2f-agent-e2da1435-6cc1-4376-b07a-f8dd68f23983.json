@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Identify and analyze SecurityDashboard component for contrast issues",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Find Partnership Management modal component",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Fix SecurityDashboard modal contrast issues",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Fix Partnership Management modal contrast issues",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Update color system for consistent dark mode contrast",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Test all components in both light and dark modes",
+    "status": "completed",
+    "priority": "medium",
+    "id": "6"
+  }
+]

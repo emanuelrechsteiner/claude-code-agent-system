@@ -1,0 +1,56 @@
+[
+  {
+    "content": "Planning-agent: Audit current footer links and create architecture for new pages",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Planning-agent: Design navigation structure and component architecture",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Frontend-agent: Implement newsletter subscription page with mobile-first design",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Frontend-agent: Create research studies page with citations display",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Frontend-agent: Build GDPR-compliant contact page with impressum",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Frontend-agent: Update footer navigation and remove unused links",
+    "status": "completed",
+    "priority": "medium",
+    "id": "6"
+  },
+  {
+    "content": "Testing-agent: Validate all new page functionality and mobile responsiveness",
+    "status": "completed",
+    "priority": "medium",
+    "id": "7"
+  },
+  {
+    "content": "Documentation-agent: Document new pages and update project documentation",
+    "status": "completed",
+    "priority": "low",
+    "id": "8"
+  },
+  {
+    "content": "Version-control-agent: Manage commits throughout development with proper messaging",
+    "status": "completed",
+    "priority": "low",
+    "id": "9"
+  }
+]

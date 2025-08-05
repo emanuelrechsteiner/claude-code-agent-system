@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Fix ProfilePage navigation issue - users cannot leave profile page",
+    "status": "completed",
+    "priority": "high",
+    "id": "42"
+  },
+  {
+    "content": "Fix remaining 2 database test failures: event update permissions and storage URLs",
+    "status": "completed",
+    "priority": "high",
+    "id": "43"
+  },
+  {
+    "content": "Fix integration test failures for complete user flow coverage",
+    "status": "completed",
+    "priority": "high",
+    "id": "44"
+  },
+  {
+    "content": "Update frontend tests for invitation model",
+    "status": "completed",
+    "priority": "medium",
+    "id": "31"
+  },
+  {
+    "content": "Ensure all tests pass",
+    "status": "completed",
+    "priority": "medium",
+    "id": "32"
+  }
+]

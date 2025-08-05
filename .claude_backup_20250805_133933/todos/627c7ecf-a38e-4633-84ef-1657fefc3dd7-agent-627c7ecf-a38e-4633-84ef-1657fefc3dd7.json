@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Check Claude configuration file for MCP settings",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Verify Firecrawl API key and environment setup",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Test Firecrawl MCP server startup manually",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Check for any dependency or installation issues",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  }
+]

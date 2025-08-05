@@ -1,0 +1,44 @@
+[
+  {
+    "content": "Control Agent: Coordinate Firebase debugging workflow across multiple agents",
+    "status": "completed",
+    "priority": "high",
+    "id": "firebase-debug-coordination"
+  },
+  {
+    "content": "Backend Agent: Investigate Firebase configuration and emulator setup issues",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "investigate-firebase-config"
+  },
+  {
+    "content": "Backend Agent: Verify Firebase emulators are running and check port 9797 connection",
+    "status": "pending",
+    "priority": "high",
+    "id": "check-emulator-status"
+  },
+  {
+    "content": "Backend Agent: Verify environment variables and dev vs prod configuration",
+    "status": "pending",
+    "priority": "high",
+    "id": "verify-env-variables"
+  },
+  {
+    "content": "Backend Agent: Resolve API key validation issues for Analytics and Performance",
+    "status": "pending",
+    "priority": "high",
+    "id": "fix-api-key-validation"
+  },
+  {
+    "content": "Backend Agent: Test full Firebase emulator functionality in development",
+    "status": "pending",
+    "priority": "medium",
+    "id": "test-firebase-emulators"
+  },
+  {
+    "content": "Documentation Agent: Update Firebase development setup documentation",
+    "status": "pending",
+    "priority": "medium",
+    "id": "document-firebase-setup"
+  }
+]

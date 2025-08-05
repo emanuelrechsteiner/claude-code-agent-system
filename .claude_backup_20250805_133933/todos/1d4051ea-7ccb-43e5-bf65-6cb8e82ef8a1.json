@@ -1,0 +1,44 @@
+[
+  {
+    "content": "Examine current summary display and data flow issues",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Implement privacy/sharing controls for financial positions",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Fix dynamic partner name fetching from connected partner profile",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Implement categorization system for expenses with industry standards",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Verify and enforce I/You/We principle throughout the app",
+    "status": "completed",
+    "priority": "high",
+    "id": "5"
+  },
+  {
+    "content": "Fix real-time summary updates from budget table changes",
+    "status": "completed",
+    "priority": "high",
+    "id": "6"
+  },
+  {
+    "content": "Add privacy controls to budget item UI",
+    "status": "completed",
+    "priority": "high",
+    "id": "7"
+  }
+]

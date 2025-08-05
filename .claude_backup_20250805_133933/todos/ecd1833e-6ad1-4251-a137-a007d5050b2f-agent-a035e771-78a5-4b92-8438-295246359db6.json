@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Analyze current authentication flow and identify timing issues",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Fix useBudgetData hook to wait for authentication",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Investigate login endpoint 401 error",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Test complete authentication flow",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "content": "Fix undefined units_sold error in SalesTrendsCard",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Add null/undefined checks for sales data",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  }
+]

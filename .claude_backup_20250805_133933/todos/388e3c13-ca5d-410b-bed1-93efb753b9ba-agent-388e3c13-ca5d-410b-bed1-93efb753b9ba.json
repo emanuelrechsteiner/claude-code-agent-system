@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Investigate commit history and deployment status",
+    "status": "completed",
+    "priority": "high",
+    "id": "55"
+  },
+  {
+    "content": "Compare deployed version with latest commits",
+    "status": "completed",
+    "priority": "high",
+    "id": "56"
+  },
+  {
+    "content": "Verify if correct version is deployed",
+    "status": "completed",
+    "priority": "high",
+    "id": "57"
+  },
+  {
+    "content": "Build and deploy the correct version with all features",
+    "status": "completed",
+    "priority": "high",
+    "id": "58"
+  },
+  {
+    "content": "Deploy the built application to Firebase",
+    "status": "completed",
+    "priority": "high",
+    "id": "59"
+  }
+]

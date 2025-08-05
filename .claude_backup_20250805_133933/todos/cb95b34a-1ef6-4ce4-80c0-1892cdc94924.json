@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Recreate LoginView as perfect lookalike with original styling",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "53"
+  },
+  {
+    "content": "Recreate DashboardView with original components and layout",
+    "status": "pending",
+    "priority": "high",
+    "id": "54"
+  },
+  {
+    "content": "Recreate ChatView with authentic message layout",
+    "status": "pending",
+    "priority": "high",
+    "id": "55"
+  },
+  {
+    "content": "Add all missing original components and patterns",
+    "status": "pending",
+    "priority": "high",
+    "id": "56"
+  }
+]

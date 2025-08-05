@@ -1,0 +1,50 @@
+[
+  {
+    "content": "Examine Firebase configuration file to check emulator setup",
+    "status": "completed",
+    "priority": "high",
+    "id": "investigate-firebase-config"
+  },
+  {
+    "content": "Verify environment variables for emulator configuration",
+    "status": "completed",
+    "priority": "high",
+    "id": "check-env-variables"
+  },
+  {
+    "content": "Check Firebase emulator status and running ports",
+    "status": "completed",
+    "priority": "high",
+    "id": "test-emulator-status"
+  },
+  {
+    "content": "Analyze submission logic to identify which Firebase services are being used",
+    "status": "completed",
+    "priority": "high",
+    "id": "examine-submission-logic"
+  },
+  {
+    "content": "Test individual Firebase service connections (Auth, Firestore, Storage)",
+    "status": "completed",
+    "priority": "medium",
+    "id": "verify-service-connections"
+  },
+  {
+    "content": "Investigate potential Firestore connection issues causing timeouts",
+    "status": "completed",
+    "priority": "high",
+    "id": "check-firestore-connection"
+  },
+  {
+    "content": "Add missing Firestore security rules for anonymous_assessments collection",
+    "status": "completed",
+    "priority": "high",
+    "id": "fix-firestore-rules"
+  },
+  {
+    "content": "Commit the Firestore rules fix",
+    "status": "completed",
+    "priority": "high",
+    "id": "commit-fix"
+  }
+]
