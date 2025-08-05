@@ -1,0 +1,45 @@
+# Claude Code Agent System .gitignore
+
+# Sensitive or personal data
+settings.local.json
+*.local.json
+
+# User-specific observation data (privacy)
+# Uncomment if you want to exclude observation data from git
+# global-observation/observation-ledger.json
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backup files
+*.backup
+*.bak
+
+# Local development
+.env
+.env.local
+
+# Test data
+test-data/
+coverage/
+
+# OS files
+Thumbs.db
+.Spotlight-V100
+.Trashes
+
+# Project-specific ledger data (if you want to keep it local)
+# ledgers/*-tasks.json
+
+# But always include the template ledgers
+!ledgers/*-tasks.template.json
