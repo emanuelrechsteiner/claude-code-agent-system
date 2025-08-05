@@ -16,10 +16,11 @@ Import global workflow: @~/.claude/CLAUDE.md
 These patterns activate automatically when relevant tasks are detected:
 
 #### Trigger Patterns (Auto-Detected)
-- **Build/create/develop mentions** → Activates control-agent + planning-agent
-- **Technical research needed** → Activates research-agent
-- **Backend/API work** → Activates backend-agent
-- **Frontend/React/UI work** → Activates frontend-agent
+- **Build/create/develop mentions** → Activates control-agent + planning-agent + research-agent (parallel)
+- **Technical research needed** → Activates research-agent immediately
+- **New technologies/APIs mentioned** → Activates research-agent for documentation
+- **Backend/API work** → Activates backend-agent (after research provides documentation)
+- **Frontend/React/UI work** → Activates frontend-agent (after research provides documentation)
 - **Testing requirements** → Activates testing-agent
 - **Documentation needs** → Activates documentation-agent
 - **Git/version control** → Activates version-control-agent

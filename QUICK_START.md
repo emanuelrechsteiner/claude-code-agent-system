@@ -7,8 +7,15 @@
 git clone https://github.com/[your-username]/claude-code-agent-system.git
 cd claude-code-agent-system
 
+# Configure (for research-agent MCP functionality)
+cp example.env .env
+# Edit .env with your Firecrawl API key from https://firecrawl.dev
+
 # Install
 ./install.sh
+
+# Setup MCP
+./setup-firecrawl-mcp.sh
 
 # Verify
 /agents  # In Claude Code

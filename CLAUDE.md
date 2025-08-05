@@ -70,10 +70,10 @@ This file implements a comprehensive agentic workflow system based on Claude Cod
 ### Automatic Agent Activation
 
 #### Trigger Patterns for Agent Invocation
-- **"I want to build/create/develop [feature/app]"** → Activates control-agent + planning-agent
-- **New technologies or APIs mentioned** → Activates research-agent
-- **Firebase/backend implementation needed** → Activates backend-agent
-- **React/UI components mentioned** → Activates frontend-agent
+- **"I want to build/create/develop [feature/app]"** → Activates control-agent + planning-agent + research-agent (parallel)
+- **New technologies or APIs mentioned** → Activates research-agent immediately
+- **Firebase/backend implementation needed** → Activates backend-agent (after research-agent provides documentation)
+- **React/UI components mentioned** → Activates frontend-agent (after research-agent provides documentation)
 - **Testing or quality assurance needed** → Activates testing-agent
 - **Documentation updates required** → Activates documentation-agent
 - **Git operations or commits needed** → Activates version-control-agent
@@ -83,7 +83,7 @@ This file implements a comprehensive agentic workflow system based on Claude Cod
 1. **Control-agent** → Always activated first for complex multi-agent tasks
 2. **Planning-agent** → Activated for new projects or major feature planning
 3. **Research-agent** → Activated parallel with planning for technical investigation
-4. **Implementation agents** (backend/frontend) → Activated after planning completion
+4. **Implementation agents** (backend/frontend) → Activated after planning and research completion
 5. **Testing-agent** → Activated during and after implementation
 6. **Documentation-agent** → Activated continuously throughout development
 7. **Version-control-agent** → Activated for commits and releases
@@ -100,7 +100,7 @@ Use these phrases to ensure proper agent activation:
 - **backend-agent**: Firebase/TypeScript specialist - MUST report to control-agent before/during/after work, commits every 30-60 minutes
 - **frontend-agent**: React/TypeScript/Tailwind specialist - MUST report to control-agent, commits frequently, coordinates with backend-agent
 - **planning-agent**: Project planning and architecture - MUST report to control-agent, creates comprehensive documentation before implementation
-- **research-agent**: Documentation research using Firecrawl MCP - MUST report to control-agent, provides research to other agents
+- **research-agent**: Documentation research using Firecrawl MCP - MUST report to control-agent, provides research to other agents, activated parallel to planning
 - **documentation-agent**: Comprehensive documentation specialist - MUST BE USED after each major step, maintains living documentation
 - **testing-agent**: Quality assurance specialist - MUST report to control-agent, ensures 90%+ test coverage
 - **version-control-agent**: Git/GitHub specialist - MUST BE USED after major changes, coordinates commits across all agents

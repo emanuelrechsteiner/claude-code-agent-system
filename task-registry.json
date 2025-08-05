@@ -7,6 +7,7 @@
   "agentLedgers": {
     "planning-agent": ".claude/ledgers/planning-tasks.json",
     "control-agent": ".claude/ledgers/control-tasks.json", 
+    "research-agent": ".claude/ledgers/research-tasks.json",
     "ux-agent": ".claude/ledgers/ux-tasks.json",
     "ui-agent": ".claude/ledgers/ui-tasks.json",
     "backend-agent": ".claude/ledgers/backend-tasks.json",

@@ -8,8 +8,15 @@
 git clone https://github.com/[your-username]/claude-code-agent-system.git
 cd claude-code-agent-system
 
+# Configure environment variables
+cp example.env .env
+# Edit .env with your actual API keys (see Environment Configuration section below)
+
 # Run installer
 ./install.sh
+
+# Set up Firecrawl MCP for research-agent
+./setup-firecrawl-mcp.sh
 ```
 
 ### 2. Verify Installation
@@ -24,6 +31,63 @@ ls ~/.claude/agents/
 ```
 
 You should see all 8 agents listed.
+
+## Environment Configuration
+
+### Setting Up API Keys
+
+The system uses environment variables for secure API key management. This enables the research agent to use MCP servers for documentation scraping.
+
+#### 1. Copy Environment Template
+```bash
+cp example.env .env
+```
+
+#### 2. Edit Environment Variables
+Open `.env` in your preferred editor and replace the placeholder values:
+
+```bash
+# Required for research-agent
+firecrawl-api-key=fc-your-actual-firecrawl-api-key-here
+
+# Optional: Add other API keys as needed
+# openai-api-key=your-openai-api-key-here
+# anthropic-api-key=your-anthropic-api-key-here
+```
+
+#### 3. Get Firecrawl API Key
+1. Visit [Firecrawl.dev](https://firecrawl.dev)
+2. Sign up for an account
+3. Navigate to your dashboard
+4. Copy your API key (format: `fc-xxxxxxxxxxxxxxxxxxxxxxxxx`)
+5. Paste it in your `.env` file
+
+#### 4. Run MCP Setup
+```bash
+./setup-firecrawl-mcp.sh
+```
+
+This script will:
+- Validate your API key format
+- Configure the Firecrawl MCP server in Claude Code
+- Provide setup verification
+
+#### 5. Restart Claude Code
+After MCP configuration, restart Claude Code to pick up the new server.
+
+### Security Notes
+- `.env` file is automatically gitignored for security
+- Never commit API keys to version control
+- Keep your API keys private and secure
+- The setup script validates API key format before configuration
+
+### Testing Research Agent
+After setup, test the research agent:
+```
+"Research React 19 new features for our project"
+```
+
+The research agent should now have access to Firecrawl tools for documentation scraping.
 
 ## Multi-Device Setup
 

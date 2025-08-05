@@ -24,6 +24,10 @@ settings.local.json
 # Backup files
 *.backup
 *.bak
+.claude_backup_*
+
+# Development history and documentation
+development_history/
 
 # Local development
 .env

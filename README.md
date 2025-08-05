@@ -30,34 +30,39 @@ This repository contains a complete multi-agent system designed to work globally
    - Architecture compliance
    - >99% confidence requirement for all changes
 
-3. **UX Agent**
+3. **Research Agent**
+   - Documentation research using Firecrawl MCP
+   - Technology evaluation and feasibility assessment
+   - Best practices compilation and synthesis
+
+4. **UX Agent**
    - User experience design
    - Wireframing and workflows
    - Accessibility compliance (WCAG 2.1 AA)
 
-4. **UI Agent**
+5. **UI Agent**
    - React/TypeScript implementation
    - Component development with >90% test coverage
    - Tailwind CSS styling
 
-5. **Backend Agent**
+6. **Backend Agent**
    - State management (Zustand)
    - API development
    - Database operations
 
-6. **Documentation Agent**
+7. **Documentation Agent**
    - API documentation
    - Developer guides
    - Architecture documentation
 
-7. **Version Control Agent**
+8. **Version Control Agent**
    - Git operations
    - Branch management
    - Release coordination
 
 ### Meta Agent
 
-8. **Improvement Agent** (Dual-Layer)
+9. **Improvement Agent** (Dual-Layer)
    - **Project Layer** (Claude Sonnet 4): Continuous observation during projects
    - **Meta Layer** (Claude Opus 4): Post-project deep analysis
    - Global learning across all projects
@@ -69,6 +74,7 @@ This repository contains a complete multi-agent system designed to work globally
 ├── agents/                 # Global agent configurations
 │   ├── planning-agent.md
 │   ├── control-agent.md
+│   ├── research-agent.md
 │   ├── ux-agent.md
 │   ├── ui-agent.md
 │   ├── backend-agent.md
@@ -89,6 +95,31 @@ This repository contains a complete multi-agent system designed to work globally
 └── task-registry.json     # Global task registry
 ```
 
+**Repository Structure:**
+```
+Claude_Code_New/
+├── agents/                    # Core agent definitions
+├── ledgers/                   # Task tracking system
+├── observation/               # Learning infrastructure
+├── global-observation/        # Cross-project learning
+├── development_history/       # Development docs (gitignored)
+├── CLAUDE.md                  # Core workflow
+├── README.md                  # Main documentation
+├── install.sh                 # Installation script
+├── uninstall.sh              # Uninstallation script
+├── setup-firecrawl-mcp.sh   # Firecrawl MCP setup script
+├── settings-template.json     # Configuration template
+├── task-registry.json        # System coordination
+├── memory.md                 # Global memory
+├── agent-protocols.md        # Communication protocols
+├── example.env               # Environment variables template
+├── LICENSE                   # Legal information
+├── QUICK_START.md           # User guide
+├── SETUP.md                 # Setup guide
+├── GITHUB_SETUP.md          # GitHub setup
+└── .gitignore               # Version control exclusions
+```
+
 ## 🚀 Installation
 
 ### Prerequisites
@@ -104,9 +135,20 @@ git clone https://github.com/[your-username]/claude-code-agent-system.git
 cd claude-code-agent-system
 ```
 
-2. Run the installation script:
+2. Configure environment variables:
+```bash
+cp example.env .env
+# Edit .env with your actual API keys (especially Firecrawl for research-agent)
+```
+
+3. Run the installation script:
 ```bash
 ./install.sh
+```
+
+4. Set up Firecrawl MCP (for research-agent):
+```bash
+./setup-firecrawl-mcp.sh
 ```
 
 This will:
@@ -230,9 +272,24 @@ cd ~/any-project      # Consistent experience everywhere
 
 ## 🔧 Configuration
 
+### Environment Variables
+The system uses environment variables for secure API key management:
+
+```bash
+# Copy the example file
+cp example.env .env
+
+# Edit with your actual API keys
+vim .env  # or use your preferred editor
+```
+
+**Required for Research Agent:**
+- `firecrawl-api-key`: Get from [Firecrawl.dev](https://firecrawl.dev) for documentation scraping
+
 ### Agent Permissions
 Each agent has specific tool permissions defined in their YAML frontmatter:
 - Planning Agent: Full access (`["*"]`)
+- Research Agent: Firecrawl MCP tools + standard tools
 - UX Agent: Read-only tools
 - UI/Backend Agents: Development tools
 - Control Agent: Full access for oversight
