@@ -153,12 +153,61 @@ cp global-observation/observation-ledger.json ~/.claude/global-observation/
 
 ## 📊 How It Works
 
-1. **Project Start**: Improvement Agent's Project Layer activates automatically
-2. **Development**: Specialized agents work on tasks while being observed
-3. **Coordination**: Control Agent ensures quality and coordination
-4. **Observation**: All activities recorded to global ledger
-5. **Project End**: Meta Layer analyzes and generates improvements
-6. **Evolution**: System becomes more efficient with each project
+### Architecture Overview
+
+The system operates with a **global + project-scoped** architecture:
+
+#### 🌍 Global Level (Shared Across All Projects)
+```bash
+~/.claude/
+├── agents/                    # Available in every project
+│   ├── planning-agent.md     # Strategic planning
+│   ├── control-agent.md      # Quality assurance  
+│   ├── improvement-agent.md  # Continuous learning
+│   └── ... (8 agents total)
+├── global-observation/       # Cross-project learning
+│   └── observation-ledger.json
+└── ...
+```
+
+#### 📁 Project Level (Specific to Each Project)
+```bash
+/your-project/
+├── .claude/
+│   ├── settings.local.json   # Project-specific config
+│   ├── ledgers/             # Task tracking for this project
+│   └── project-data/        # Local observations
+└── your-files...
+```
+
+### Workflow
+
+1. **Install Once**: Agents become available in ALL Claude Code projects
+2. **Auto-Activation**: Improvement Agent starts observing from first prompt
+3. **Global Learning**: Every project contributes to shared knowledge base
+4. **Cross-Project Benefits**: Patterns from Project A help Project B
+5. **Continuous Evolution**: System gets smarter with each project
+
+### Example Usage
+
+```bash
+# Install system
+git clone https://github.com/emanuelgrammenos/claude-code-agent-system.git
+cd claude-code-agent-system
+./install.sh
+
+# Now available everywhere
+cd ~/my-react-app     # All 8 agents available
+cd ~/my-python-app    # Same 8 agents available  
+cd ~/any-project      # Consistent experience everywhere
+```
+
+### Learning Flow
+
+- **Project A**: UI Agent learns React best practices
+- **Project B**: UI Agent applies React knowledge to Vue project
+- **Project C**: Benefits from both React and Vue experiences
+- **Result**: Each project improves the entire system
 
 ## 🔧 Configuration
 
