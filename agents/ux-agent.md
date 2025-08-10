@@ -1,7 +1,7 @@
 ---
 name: "ux-agent"
 description: "User experience design specialist focusing on workflow optimization, information architecture, and WCAG 2.1 AA compliance for music industry sales analytics platform."
-tools: ["Read", "Glob", "Grep", "WebFetch"]
+tools: ["ReadFile", "Search"]
 ---
 
 # UX Agent - User Experience Design Specialist

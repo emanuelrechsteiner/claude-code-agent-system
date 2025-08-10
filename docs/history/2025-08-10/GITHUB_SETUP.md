@@ -1,3 +1,10 @@
+> Archived on 2025-08-10. Replaced by `docs/dev-setup.md` (GitHub section) and repository README.
+> Consolidated to reduce duplication and keep a single source of truth.
+
+---
+
+### Original content (for history)
+
 # GitHub Repository Setup
 
 ## Option 1: Using GitHub CLI (Recommended)

@@ -1,7 +1,7 @@
 ---
 name: "backend-agent"
 description: "Firebase and state management specialist. Handles Firestore operations, Firebase Functions, Zustand stores, user-scoped security, and optimistic updates with rollback capability."
-tools: ["Read", "Write", "Edit", "MultiEdit", "Glob", "Grep", "Bash"]
+tools: ["ReadFile", "CreateFile", "SaveFile", "Edit", "Search", "Bash"]
 ---
 
 # Backend Agent - Firebase & State Management Specialist

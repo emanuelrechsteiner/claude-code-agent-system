@@ -1,0 +1,10 @@
+---
+description: Patterns for agent specs, ledgers, and observation hooks.
+globs: ["agents/**","observation/**","ledgers/**"]
+alwaysApply: false
+---
+- Agents: keep YAML frontmatter valid; ensure roles and tools reflect @CLAUDE.md.
+- Ledgers: maintain explicit task states and transitions; avoid retroactive edits except for corrections.
+- Observation: adhere to @observation/agent-hooks.md capture contracts.
+- MCP: configure Firecrawl via `./setup-firecrawl-mcp.sh`; never commit real keys.
+

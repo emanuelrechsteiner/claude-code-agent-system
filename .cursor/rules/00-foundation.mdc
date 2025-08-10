@@ -1,0 +1,10 @@
+---
+description: Project foundation—what this repo is, how to talk to it, and where the source-of-truth docs live. Short, actionable.
+alwaysApply: false
+---
+- This repository installs and documents a global multi-agent workflow for Claude Code.
+- Use the control-agent for coordination; specialized agents do the work.
+- Canonical docs: @docs/overview.md @docs/architecture.md @docs/dev-setup.md @docs/code-map.md
+- Guardrails: keep diffs small, never invent secrets, prefer adding smoke checks when changing scripts.
+- If unsure, ask for clarification, cite @CLAUDE.md and @agent-protocols.md, and stop for confirmation on risky changes.
+

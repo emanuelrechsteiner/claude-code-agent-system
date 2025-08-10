@@ -1,0 +1,8 @@
+---
+description: Lightweight ledger of durable project facts. Append only; do not duplicate chat history.
+alwaysApply: false
+---
+- The canonical docs live under `docs/`; root README links into them.
+- There are 8 core agents; control-agent coordinates and never executes.
+- Research Agent MCP uses `firecrawl-api-key` if configured via `.env` and `./setup-firecrawl-mcp.sh`.
+

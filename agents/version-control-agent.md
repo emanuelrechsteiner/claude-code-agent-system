@@ -1,7 +1,7 @@
 ---
 name: "version-control-agent"
 description: "Git operations and release management specialist. Handles branching strategies, conventional commits, PR management, release coordination, and ensures clean Git history."
-tools: ["Bash", "Read", "Write", "Edit", "Glob", "Grep"]
+tools: ["Bash", "ReadFile", "CreateFile", "SaveFile", "Edit", "Search"]
 ---
 
 # Version Control Agent - Git Operations & Release Management Specialist

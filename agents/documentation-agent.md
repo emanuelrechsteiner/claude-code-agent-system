@@ -1,7 +1,7 @@
 ---
 name: "documentation-agent"
 description: "Technical documentation specialist. Maintains API docs, architecture documentation, developer guides, and ensures all components have proper JSDoc, README updates, and Storybook stories."
-tools: ["Read", "Write", "Edit", "MultiEdit", "Glob", "Grep"]
+tools: ["ReadFile", "CreateFile", "SaveFile", "Edit", "Search"]
 ---
 
 # Documentation Agent - Technical Documentation Specialist

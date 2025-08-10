@@ -1,20 +1,20 @@
 ---
 name: "improvement-agent"
 description: "Dual-layer optimization agent. Project Layer (Sonnet): Continuous real-time observation and global ledger recording. Meta Layer (Opus): Deep post-project analysis for comprehensive agent improvements across efficiency, quality, synchronization, and best practices."
-tools: ["Read", "Write", "Edit", "MultiEdit", "Glob", "Grep", "TodoWrite", "WebFetch"]
-model: "claude-3-5-sonnet"  # Default for Project Layer
-meta_model: "claude-3-5-opus"  # For Meta Layer analysis
+tools: ["ReadFile", "CreateFile", "SaveFile", "Edit", "Search", "WebFetch"]
+model: "claude-4-sonnet"  # Default for Project Layer
+meta_model: "claude-4.1-opus"  # For Meta Layer analysis
 temperature: 0.1
 observability: "enhanced"
 activation: "immediate"  # Starts with first user prompt
 layers:
   project:
-    model: "claude-3-5-sonnet"
+    model: "claude-4-sonnet"
     mode: "continuous_observation"
     actions: ["observe", "record", "aggregate"]
     restrictions: ["no_improvements", "no_interventions"]
   meta:
-    model: "claude-3-5-opus"
+   model: "claude-4.1-opus"  
     mode: "deep_analysis"
     actions: ["analyze", "synthesize", "recommend", "optimize"]
     activation: "control_agent_triggered"

@@ -14,7 +14,7 @@ A sophisticated multi-agent system for Claude Code that provides intelligent dev
 
 ## 🌟 Overview
 
-This repository contains a complete multi-agent system designed to work globally with Claude Code across all your projects. The system includes specialized agents for different aspects of development, coordinated by a control agent, and continuously improved by a dual-layer improvement agent.
+This repository contains a complete multi-agent system designed to work globally with Claude Code across all your projects. For detailed documentation, see `docs/overview.md`, `docs/architecture.md`, and `docs/dev-setup.md`.
 
 ## 🤖 Agent Roster
 
@@ -102,22 +102,22 @@ Claude_Code_New/
 ├── ledgers/                   # Task tracking system
 ├── observation/               # Learning infrastructure
 ├── global-observation/        # Cross-project learning
+├── docs/                      # Canonical documentation (overview, architecture, dev-setup, etc.)
+├── .cursor/
+│   └── rules/                 # Cursor Project Rules (MDC)
 ├── development_history/       # Development docs (gitignored)
 ├── CLAUDE.md                  # Core workflow
-├── README.md                  # Main documentation
+├── README.md                  # Entry point (links to docs/)
 ├── install.sh                 # Installation script
-├── uninstall.sh              # Uninstallation script
-├── setup-firecrawl-mcp.sh   # Firecrawl MCP setup script
+├── uninstall.sh               # Uninstallation script
+├── setup-firecrawl-mcp.sh     # Firecrawl MCP setup script
 ├── settings-template.json     # Configuration template
-├── task-registry.json        # System coordination
-├── memory.md                 # Global memory
-├── agent-protocols.md        # Communication protocols
-├── example.env               # Environment variables template
-├── LICENSE                   # Legal information
-├── QUICK_START.md           # User guide
-├── SETUP.md                 # Setup guide
-├── GITHUB_SETUP.md          # GitHub setup
-└── .gitignore               # Version control exclusions
+├── task-registry.json         # System coordination
+├── memory.md                  # Global memory
+├── agent-protocols.md         # Communication protocols
+├── example.env                # Environment variables template
+├── LICENSE                    # Legal information
+└── .gitignore                 # Version control exclusions
 ```
 
 ## 🚀 Installation

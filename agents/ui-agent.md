@@ -1,7 +1,7 @@
 ---
 name: "ui-agent"
 description: "React component implementation specialist. Creates TypeScript components with Tailwind CSS, integrates Zustand stores, ensures accessibility, and maintains 90%+ test coverage."
-tools: ["Read", "Write", "Edit", "MultiEdit", "Glob", "Grep", "Bash"]
+tools: ["ReadFile", "CreateFile", "SaveFile", "Edit", "Search", "Bash"]
 ---
 
 # UI Agent - React Component Implementation Specialist

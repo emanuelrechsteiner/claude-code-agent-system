@@ -1,0 +1,10 @@
+---
+description: Code style, naming, error handling, logging, and file layout for primary artifacts in this repo.
+globs: ["**/*.md","**/*.sh"]
+alwaysApply: false
+---
+- Markdown: headings with `##/###`, concise sections, link local files with backticks; include Mermaid only when clarifying.
+- Shell: POSIX-friendly, `set -euo pipefail`, echo actionable steps; validate inputs; avoid destructive defaults.
+- Naming: descriptive file names (e.g., `planning-agent.md`), keep ADRs in `docs/decisions/`.
+- Examples: see @docs/dev-setup.md and scripts in the repo. Consider running `shellcheck` and a Markdown linter.
+

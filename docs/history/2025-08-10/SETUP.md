@@ -1,3 +1,10 @@
+> Archived on 2025-08-10. Replaced by `docs/dev-setup.md`.
+> Consolidated to reduce duplication and keep a single source of truth.
+
+---
+
+### Original content (for history)
+
 # Setup Guide - Claude Code Multi-Agent System
 
 ## Quick Start

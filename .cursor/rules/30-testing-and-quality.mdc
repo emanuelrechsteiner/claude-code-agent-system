@@ -1,0 +1,9 @@
+---
+description: How to add and run tests; coverage thresholds; smoke tests and fixtures.
+alwaysApply: false
+---
+- Run `shellcheck install.sh setup-firecrawl-mcp.sh uninstall.sh` before committing script changes.
+- Run a Markdown linter on changed `.md` files.
+- Minimal smoke tests: verify `/agents` lists all 8 agents; confirm observation updates when ledgers change; test Firecrawl prompt after MCP setup.
+- If a CI exists later, gate on shellcheck + markdownlint.
+

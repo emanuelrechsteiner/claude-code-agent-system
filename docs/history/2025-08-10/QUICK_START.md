@@ -1,3 +1,10 @@
+> Archived on 2025-08-10. Replaced by `docs/dev-setup.md` and `docs/overview.md`.
+> Consolidated to reduce duplication and keep a single source of truth.
+
+---
+
+### Original content (for history)
+
 # 🚀 Quick Start - Claude Code Agent System
 
 ## 30-Second Setup

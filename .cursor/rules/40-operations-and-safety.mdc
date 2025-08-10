@@ -1,0 +1,8 @@
+---
+description: Operational guardrails—secrets, envs, build/run commands, deployment, and risky-change checklist.
+alwaysApply: false
+---
+- Secrets: use `.env` based on `example.env`; never commit real keys.
+- Run: `./install.sh`; optional MCP: `./setup-firecrawl-mcp.sh`; uninstall with `./uninstall.sh`.
+- Dangerous changes checklist: deleting ledgers, altering observation formats, changing control-agent rules in @CLAUDE.md—stop and get confirmation.
+
