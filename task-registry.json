@@ -12,6 +12,7 @@
     "ui-agent": ".claude/ledgers/ui-tasks.json",
     "backend-agent": ".claude/ledgers/backend-tasks.json",
     "documentation-agent": ".claude/ledgers/documentation-tasks.json",
+    "testing-agent": ".claude/ledgers/testing-tasks.json",
     "version-control-agent": ".claude/ledgers/version-control-tasks.json",
     "improvement-agent": ".claude/ledgers/improvement-tasks.json"
   },

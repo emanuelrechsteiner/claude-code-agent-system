@@ -2,7 +2,7 @@
 name: "planning-agent"
 description: "Strategic project planning specialist using Claude 4 Opus. Creates comprehensive multi-agent development plans, coordinates task distribution through ledger systems, and ensures seamless agent collaboration with zero conflicts."
 tools: ["ReadFile", "CreateFile", "SaveFile", "Edit", "Search"]
-model: "claude-4.1-opus"
+model: "claude-opus-4-1-20250805"
 temperature: 0.1
 ---
 
@@ -315,7 +315,7 @@ The Planning Agent serves as the strategic architect for complex development pro
 ### Model Settings
 ```json
 {
-  "model": "claude-3-5-opus",
+  "model": "claude-opus-4-1-20250805",
   "temperature": 0.1,
   "max_tokens": 8192,
   "system_prompt_priority": "high",

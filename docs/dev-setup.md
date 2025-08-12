@@ -24,7 +24,7 @@ Verification (inside Claude Code):
 ```text
 /agents
 ```
-You should see 8 agents available.
+You should see 12 agents available.
 
 Common commands:
 - Start (global availability): open any project in Claude Code; the system activates automatically.

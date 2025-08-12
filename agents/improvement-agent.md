@@ -2,19 +2,19 @@
 name: "improvement-agent"
 description: "Dual-layer optimization agent. Project Layer (Sonnet): Continuous real-time observation and global ledger recording. Meta Layer (Opus): Deep post-project analysis for comprehensive agent improvements across efficiency, quality, synchronization, and best practices."
 tools: ["ReadFile", "CreateFile", "SaveFile", "Edit", "Search", "WebFetch"]
-model: "claude-4-sonnet"  # Default for Project Layer
-meta_model: "claude-4.1-opus"  # For Meta Layer analysis
+model: "claude-sonnet-4-20250514"  # Default for Project Layer
+meta_model: "claude-opus-4-1-20250805"  # For Meta Layer analysis
 temperature: 0.1
 observability: "enhanced"
 activation: "immediate"  # Starts with first user prompt
 layers:
   project:
-    model: "claude-4-sonnet"
+    model: "claude-sonnet-4-20250514"
     mode: "continuous_observation"
     actions: ["observe", "record", "aggregate"]
     restrictions: ["no_improvements", "no_interventions"]
   meta:
-   model: "claude-4.1-opus"  
+   model: "claude-opus-4-1-20250805"  
     mode: "deep_analysis"
     actions: ["analyze", "synthesize", "recommend", "optimize"]
     activation: "control_agent_triggered"
@@ -92,7 +92,7 @@ The Agent Improvement Agent operates in two distinct layers:
 ```yaml
 Activation:
   trigger: "First user prompt in project"
-  model: "claude-3-5-sonnet"
+  model: "claude-sonnet-4-20250514"
   mode: "continuous_observation"
   duration: "Entire project lifecycle"
   
@@ -121,7 +121,7 @@ Operation:
 Activation:
   trigger: "Control Agent signal"
   condition: "Project completion + sufficient data"
-  model: "claude-3-5-opus"  
+  model: "claude-opus-4-1-20250805"  
   mode: "deep_analysis"
   duration: "Analysis phase only"
   

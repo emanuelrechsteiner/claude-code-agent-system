@@ -50,19 +50,24 @@ This repository contains a complete multi-agent system designed to work globally
    - API development
    - Database operations
 
-7. **Documentation Agent**
+7. **Testing Agent**
+   - Quality assurance specialist
+   - Vitest, Playwright, Storybook testing
+   - Ensures 90%+ test coverage
+
+8. **Documentation Agent**
    - API documentation
    - Developer guides
    - Architecture documentation
 
-8. **Version Control Agent**
+9. **Version Control Agent**
    - Git operations
    - Branch management
    - Release coordination
 
 ### Meta Agent
 
-9. **Improvement Agent** (Dual-Layer)
+10. **Improvement Agent** (Dual-Layer)
    - **Project Layer** (Claude Sonnet 4): Continuous observation during projects
    - **Meta Layer** (Claude Opus 4): Post-project deep analysis
    - Global learning across all projects
@@ -78,6 +83,7 @@ This repository contains a complete multi-agent system designed to work globally
 │   ├── ux-agent.md
 │   ├── ui-agent.md
 │   ├── backend-agent.md
+│   ├── testing-agent.md
 │   ├── documentation-agent.md
 │   ├── version-control-agent.md
 │   └── improvement-agent.md
@@ -86,6 +92,7 @@ This repository contains a complete multi-agent system designed to work globally
 ├── ledgers/               # Agent task tracking
 │   ├── planning-tasks.json
 │   ├── control-tasks.json
+│   ├── testing-tasks.json
 │   └── ...
 ├── observation/           # Observation infrastructure
 │   ├── activity-stream.json
@@ -225,7 +232,7 @@ The system operates with a **global + project-scoped** architecture:
 │   ├── planning-agent.md     # Strategic planning
 │   ├── control-agent.md      # Quality assurance  
 │   ├── improvement-agent.md  # Continuous learning
-│   └── ... (8 agents total)
+│   └── ... (12 agents total)
 ├── global-observation/       # Cross-project learning
 │   └── observation-ledger.json
 └── ...
@@ -258,8 +265,8 @@ cd claude-code-agent-system
 ./install.sh
 
 # Now available everywhere
-cd ~/my-react-app     # All 8 agents available
-cd ~/my-python-app    # Same 8 agents available  
+cd ~/my-react-app     # All 12 agents available
+cd ~/my-python-app    # Same 12 agents available  
 cd ~/any-project      # Consistent experience everywhere
 ```
 

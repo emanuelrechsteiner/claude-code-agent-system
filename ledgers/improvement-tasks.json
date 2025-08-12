@@ -34,7 +34,7 @@
   "operationalParameters": {
     "projectLayer": {
       "activationTrigger": "first_user_prompt",
-      "model": "claude-3-5-sonnet",
+      "model": "claude-sonnet-4-20250514",
       "mode": "continuous_observation",
       "actions": ["observe", "record", "aggregate"],
       "restrictions": ["no_improvements", "no_interventions"]
@@ -42,7 +42,7 @@
     "metaLayer": {
       "activationTrigger": "project_completion",
       "activatedBy": "control-agent",
-      "model": "claude-3-5-opus",
+      "model": "claude-opus-4-1-20250805",
       "mode": "deep_analysis",
       "actions": ["analyze", "recommend", "optimize"],
       "approvalRequired": ["control-agent", "user"],

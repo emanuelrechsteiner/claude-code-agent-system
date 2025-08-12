@@ -29,7 +29,7 @@ mkdir -p "$HOME/.claude/templates/bootstrap/hooks"
 # Copy agent configurations
 echo "🤖 Installing agents..."
 cp agents/*.md "$HOME/.claude/agents/"
-echo "  ✓ Installed $(ls -1 agents/*.md | wc -l) agents (including research-agent with Firecrawl MCP)"
+echo "  ✓ Installed $(ls -1 agents/*.md | wc -l) agents (including research-agent with Firecrawl MCP and testing-agent)"
 
 # Copy bootstrap templates and new project-starting agent
 echo "🧰 Installing project bootstrap assets..."
