@@ -2,7 +2,7 @@
 description: Explore the repo, audit+consolidate docs, and (optionally) bootstrap Claude assets (CLAUDE.md, subagents, hooks). Read-only by default; asks before writing.
 argument-hint: [--docs-only | --bootstrap-only | --agents | --hooks | --yes] [notes]
 model: claude-sonnet-4-20250514
-allowed-tools: Read, Glob, Grep, LS, Bash(git status:*), Bash(git rev-parse:*), Bash(git branch --show-current:*), Bash(git log --oneline -10)
+allowed-tools: Read, Glob, Grep, LS, Bash(git status:*), Bash(git rev-parse:*), Bash(git branch:*), Bash(git log:*), Bash(pwd:*), Bash(echo:*)
 ---
 
 # Claude Code — Repo Explorer & Docs Consolidator (+ Optional Project Bootstrap)
@@ -17,10 +17,10 @@ Parse flags from $ARGUMENTS:
 - --yes → If present, you may proceed with Write/Edit after showing the plan. Otherwise, ask for approval.
 
 ## Context (auto-collected)
-- Repo root: !`git rev-parse --show-toplevel || pwd`
-- Branch: !`git branch --show-current || echo '(detached/none)'`
+- Repo root: !`git rev-parse --show-toplevel`
+- Branch: !`git branch --show-current`
 - Status: !`git status -s`
-- Recent commits: !`git log --oneline -10 || true`
+- Recent commits: !`git log --oneline -10`
 
 ## OPERATING PRINCIPLES
 - Pipeline: EXPLORE → PLAN → EXECUTE → SUMMARIZE.
