@@ -46,4 +46,6 @@ Thumbs.db
 # ledgers/*-tasks.json
 
 # But always include the template ledgers
-!ledgers/*-tasks.template.json
+!ledgers/*-tasks.template.jsonnode_modules/
+package-lock.json
+package.json

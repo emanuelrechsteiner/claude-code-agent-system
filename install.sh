@@ -22,11 +22,31 @@ mkdir -p "$HOME/.claude/global-observation"
 mkdir -p "$HOME/.claude/ledgers"
 mkdir -p "$HOME/.claude/observation"
 mkdir -p "$HOME/.claude/test-scenarios"
+mkdir -p "$HOME/.claude/commands"
+mkdir -p "$HOME/.claude/templates/bootstrap/agents"
+mkdir -p "$HOME/.claude/templates/bootstrap/hooks"
 
 # Copy agent configurations
 echo "🤖 Installing agents..."
 cp agents/*.md "$HOME/.claude/agents/"
 echo "  ✓ Installed $(ls -1 agents/*.md | wc -l) agents (including research-agent with Firecrawl MCP)"
+
+# Copy bootstrap templates and new project-starting agent
+echo "🧰 Installing project bootstrap assets..."
+cp -f agents/project-bootstrap-agent.md "$HOME/.claude/agents/" || true
+if [ -d "templates/bootstrap" ]; then
+  cp -f templates/bootstrap/CLAUDE.md "$HOME/.claude/templates/bootstrap/" 2>/dev/null || true
+  cp -f templates/bootstrap/agents/*.md "$HOME/.claude/templates/bootstrap/agents/" 2>/dev/null || true
+  cp -f templates/bootstrap/hooks/* "$HOME/.claude/templates/bootstrap/hooks/" 2>/dev/null || true
+fi
+echo "  ✓ Project bootstrap templates installed (if present)"
+
+# Copy global slash commands
+if [ -d "templates/commands" ]; then
+  echo "⌨️  Installing global slash commands..."
+  cp -f templates/commands/*.md "$HOME/.claude/commands/" 2>/dev/null || true
+  echo "  ✓ Global slash commands installed"
+fi
 
 # Copy observation infrastructure
 echo "🔍 Setting up observation infrastructure..."
@@ -77,6 +97,8 @@ echo "🔒 Setting permissions..."
 chmod 755 "$HOME/.claude"
 chmod 755 "$HOME/.claude/agents"
 chmod 644 "$HOME/.claude/agents/"*.md
+chmod -R 755 "$HOME/.claude/templates/bootstrap/hooks" 2>/dev/null || true
+chmod 644 "$HOME/.claude/commands/"*.md 2>/dev/null || true
 echo "  ✓ Permissions configured"
 
 # Verification
