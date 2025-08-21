@@ -26,8 +26,25 @@ Verification (inside Claude Code):
 ```
 You should see 12 agents available.
 
+Bootstrap New Projects:
+```text
+/bootstrap
+```
+Available flags:
+- `--docs-only`: Only create/update documentation
+- `--bootstrap-only`: Only set up Claude assets (CLAUDE.md, agents, hooks)
+- `--agents`: Include `.claude/agents/` configurations
+- `--hooks`: Include `.claude/settings.json` with safe hooks
+- `--yes`: Auto-approve changes (skip confirmation)
+
+Example usage:
+```text
+/bootstrap --agents --hooks
+```
+
 Common commands:
 - Start (global availability): open any project in Claude Code; the system activates automatically.
+- Bootstrap project: `/bootstrap` to analyze and set up Claude Code configuration
 - Uninstall/reset: `./uninstall.sh` then `./install.sh`.
 
 Lint/format/build:

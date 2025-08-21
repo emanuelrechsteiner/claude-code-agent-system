@@ -14,7 +14,21 @@ A sophisticated multi-agent system for Claude Code that provides intelligent dev
 
 ## 🌟 Overview
 
-This repository contains a complete multi-agent system designed to work globally with Claude Code across all your projects. For detailed documentation, see `docs/overview.md`, `docs/architecture.md`, and `docs/dev-setup.md`.
+This repository contains a complete multi-agent system designed to work globally with Claude Code across all your projects.
+
+### 📚 Documentation
+
+- **[Overview](docs/overview.md)** - System purpose and user journeys
+- **[Architecture](docs/architecture.md)** - System design and module structure
+- **[Developer Setup](docs/dev-setup.md)** - Installation and configuration guide
+- **[Bootstrap Guide](docs/bootstrap-guide.md)** - Project initialization with `/bootstrap`
+- **[Agent Reference](docs/agent-reference.md)** - Complete agent capabilities matrix
+- **[Troubleshooting](docs/troubleshooting.md)** - Common issues and solutions
+- **[Testing](docs/testing.md)** - Testing procedures and quality checks
+- **[Security](docs/security.md)** - Security considerations and best practices
+- **[API Reference](docs/api.md)** - Interface documentation
+- **[Data Model](docs/data-model.md)** - Ledger and observation structure
+- **[Code Map](docs/code-map.md)** - Directory structure reference
 
 ## 🤖 Agent Roster
 
@@ -127,42 +141,52 @@ Claude_Code_New/
 └── .gitignore                 # Version control exclusions
 ```
 
-## 🚀 Installation
+## 🚀 Quick Start
 
 ### Prerequisites
 - Claude Code installed
 - Git
 - Unix-like environment (macOS/Linux)
 
-### Quick Install
+### Installation (2 minutes)
 
-1. Clone this repository:
 ```bash
+# 1. Clone repository
 git clone https://github.com/[your-username]/claude-code-agent-system.git
 cd claude-code-agent-system
-```
 
-2. Configure environment variables:
-```bash
+# 2. Configure API keys (optional, for research agent)
 cp example.env .env
-# Edit .env with your actual API keys (especially Firecrawl for research-agent)
-```
+# Edit .env with your Firecrawl API key
 
-3. Run the installation script:
-```bash
+# 3. Install the system
 ./install.sh
-```
 
-4. Set up Firecrawl MCP (for research-agent):
-```bash
+# 4. Set up Firecrawl MCP (optional)
 ./setup-firecrawl-mcp.sh
 ```
 
-This will:
-- Create necessary directories in `~/.claude/`
-- Copy all agent configurations
-- Set up the observation infrastructure
-- Initialize the global observation ledger
+### First Use
+
+1. **Verify installation** (in Claude Code):
+   ```text
+   /agents
+   ```
+   You should see 12+ agents available.
+
+2. **Bootstrap a project**:
+   ```text
+   /bootstrap --agents --hooks
+   ```
+   This analyzes your repository and sets up comprehensive Claude configuration.
+
+3. **Test agent coordination**:
+   ```text
+   "Build a simple todo component"
+   ```
+   Watch as control-agent coordinates multiple specialists.
+
+For detailed installation instructions, see the **[Developer Setup Guide](docs/dev-setup.md)**.
 
 ### Manual Installation
 
