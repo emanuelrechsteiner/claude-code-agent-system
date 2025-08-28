@@ -5,6 +5,10 @@
 
 set -e  # Exit on error
 
+# Ensure we're in the correct directory (script's directory)
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$SCRIPT_DIR"
+
 echo "🚀 Claude Code Agent System - Enhanced Installer"
 echo "==============================================="
 echo ""

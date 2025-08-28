@@ -8,6 +8,13 @@ set -e  # Exit on any error
 # macOS-specific setup
 export PATH="/usr/local/bin:/opt/homebrew/bin:$PATH"
 
+# Change to the directory where this script is located
+# This is crucial for double-click execution from Finder
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$SCRIPT_DIR"
+
+echo "📍 Changed to installer directory: $SCRIPT_DIR"
+
 echo "🚀 Claude Code Agent System - macOS Installation"
 echo "=================================================="
 echo ""
@@ -141,11 +148,17 @@ fi
 
 echo "✅ Python $(python3 --version | cut -d' ' -f2) found"
 
-# Check if running from the correct directory
+# Check if the required files exist (validates this is the correct repository)
 if [ ! -f "agents/control-agent.md" ]; then
     echo ""
-    echo "❌ Please run this installer from the claude-code-agent-system directory"
+    echo "❌ Error: Required installation files not found!"
     echo "Current directory: $(pwd)"
+    echo ""
+    echo "This appears to be an incomplete installation. Please:"
+    echo "  1. Download the complete claude-code-agent-system repository"
+    echo "  2. Ensure all files are extracted properly"  
+    echo "  3. Double-click install.command from the main directory"
+    echo ""
     pause_for_user
     exit 1
 fi
@@ -395,6 +408,10 @@ echo "  ✅ Settings configured"
 
 # Count MCP servers
 mcp_count=$(claude mcp list 2>/dev/null | grep -c "✓ Connected" || echo "0")
+# Ensure mcp_count is a valid number (fix for multi-line error output)
+if ! [[ "$mcp_count" =~ ^[0-9]+$ ]]; then
+    mcp_count=0
+fi
 echo "  📡 MCP servers: $mcp_count connected"
 
 echo ""
