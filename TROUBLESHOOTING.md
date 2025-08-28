@@ -474,19 +474,56 @@ ls -la ~/.claude/templates/commands/
 ```
 
 **Solutions:**
-1. **Re-install Command Templates**
+1. **Install System Ripgrep (CRITICAL FIX)**: The most common cause is using Claude Code's built-in ripgrep instead of system ripgrep
+   ```bash
+   # macOS
+   brew install ripgrep
+   
+   # Ubuntu/Debian
+   sudo apt install ripgrep
+   
+   # Add to shell profile (.zshrc, .bashrc, etc.)
+   echo 'export USE_BUILTIN_RIPGREP=0' >> ~/.zshrc
+   
+   # Or add to ~/.claude/settings.json
+   {
+     "environment": {
+       "USE_BUILTIN_RIPGREP": "0"
+     }
+   }
+   
+   # Verify system ripgrep is being used
+   which rg  # Should show /usr/local/bin/rg or /opt/homebrew/bin/rg, NOT claude-code/vendor
+   ```
+
+2. **Re-install Command Templates**
    ```bash
    cp templates/commands/*.md ~/.claude/templates/commands/
    ```
 
-2. **Check Claude Code Configuration**
+3. **Check Claude Code Configuration**
    ```bash
    # Restart Claude Code after installing templates
    pkill -f "claude"
    # Reopen Claude Code
    ```
 
-3. **Test Commands One by One**
+4. **Fix Bash Command Permissions**: If you get "permission check failed" errors for git commands, the slash commands need EXACT command permissions (not wildcards):
+   ```bash
+   # WRONG - Uses wildcards and compound commands with || operators:
+   # allowed-tools: ["*", "Bash(git:*)", "Bash(git rev-parse:*)"]
+   
+   # CORRECT - Exact commands without shell operators:
+   # allowed-tools: ["*", "Bash(git rev-parse --show-toplevel)", "Bash(git branch --show-current)"]
+   
+   # Claude Code is aware of shell operators like || && so compound commands fail
+   # Remove || operators and use separate commands instead
+   
+   # Re-copy updated templates with correct permissions
+   cp templates/commands/*.md ~/.claude/commands/
+   ```
+
+5. **Test Commands One by One**
    ```bash
    claude /start --quick
    claude /ledger --check

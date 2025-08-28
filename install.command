@@ -106,6 +106,24 @@ fi
 
 echo "✅ Claude Code CLI found"
 
+# Check if ripgrep is installed (required for slash command discovery)
+if ! command_exists rg || [[ "$(which rg)" == *"claude-code/vendor"* ]]; then
+    echo ""
+    echo "🔧 Installing system ripgrep (required for slash command discovery)..."
+    if command_exists brew; then
+        brew install ripgrep
+        echo "✅ System ripgrep installed"
+    else
+        echo "❌ Homebrew not found! Please install ripgrep manually:"
+        echo "  Visit: https://github.com/BurntSushi/ripgrep#installation"
+        echo "  Or install Homebrew first: /bin/bash -c \"\$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\""
+        pause_for_user
+        exit 1
+    fi
+else
+    echo "✅ System ripgrep found"
+fi
+
 # Check Node.js and npm
 if ! command_exists node; then
     echo ""
@@ -319,6 +337,9 @@ cat > ~/.claude/settings.json << 'EOF'
     "auto-capture": true,
     "ledger-path": "~/.claude/global-observation/",
     "token-tracking": true
+  },
+  "environment": {
+    "USE_BUILTIN_RIPGREP": "0"
   }
 }
 EOF

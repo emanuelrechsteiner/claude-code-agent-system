@@ -53,6 +53,27 @@ fi
 
 echo "✅ Claude Code CLI found"
 
+# Check if ripgrep is installed (required for slash command discovery)
+if ! command_exists rg || [[ "$(which rg)" == *"claude-code/vendor"* ]]; then
+    echo "🔧 Installing system ripgrep (required for slash command discovery)..."
+    if command_exists brew; then
+        brew install ripgrep
+        echo "✅ System ripgrep installed"
+    elif command_exists apt; then
+        sudo apt install ripgrep
+        echo "✅ System ripgrep installed"  
+    elif command_exists yum; then
+        sudo yum install ripgrep
+        echo "✅ System ripgrep installed"
+    else
+        echo "❌ Package manager not found! Please install ripgrep manually:"
+        echo "  Visit: https://github.com/BurntSushi/ripgrep#installation"
+        exit 1
+    fi
+else
+    echo "✅ System ripgrep found"
+fi
+
 # Check if Claude directory exists
 if [ ! -d "$HOME/.claude" ]; then
     echo "📁 Creating ~/.claude directory..."
@@ -197,6 +218,9 @@ if [ ! -f "$HOME/.claude/settings.json" ]; then
     "auto-capture": true,
     "ledger-path": "~/.claude/global-observation/",
     "token-tracking": true
+  },
+  "environment": {
+    "USE_BUILTIN_RIPGREP": "0"
   },
   "mcp-servers": {
     "auto-detect": true,

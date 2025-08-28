@@ -381,10 +381,28 @@ claude "Use the control-agent to analyze this request"
 
 #### Missing Slash Commands
 ```bash
+# CRITICAL FIX: Install system ripgrep (required for command discovery)
+# macOS
+brew install ripgrep
+
+# Ubuntu/Debian  
+sudo apt install ripgrep
+
+# Add environment variable
+echo 'export USE_BUILTIN_RIPGREP=0' >> ~/.zshrc
+source ~/.zshrc
+
+# Verify system ripgrep is being used
+which rg  # Should show /opt/homebrew/bin/rg, NOT claude-code/vendor
+
 # Verify command templates exist
 ls -la ~/.claude/templates/commands/
 
-# Re-run installation
+# Restart Claude Code
+pkill -f "claude"
+# Then reopen Claude Code
+
+# If still not working, re-run installation
 ./install-enhanced.sh
 ```
 
