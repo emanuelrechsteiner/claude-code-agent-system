@@ -1,3 +1,75 @@
+# 🚀 Claude Code Agent System
+
+A comprehensive multi-agent development automation system that enhances Claude Code with specialized agents, intelligent workflows, and self-improving capabilities.
+
+## ⚡ Quick Install
+
+### macOS Users (Easiest)
+**Double-click** `install.command` in Finder → Follow the wizard → Done!
+
+### All Platforms
+```bash
+git clone <this-repository>
+cd claude-code-agent-system
+./install-enhanced.sh
+```
+
+## 📚 Complete Documentation
+
+- **[📖 Installation Guide](INSTALLATION-GUIDE.md)** - Complete setup instructions for all platforms
+- **[👤 User Guide](USER-GUIDE.md)** - How to use slash commands and agent workflows
+- **[🔧 Troubleshooting](TROUBLESHOOTING.md)** - Solutions for common issues
+- **[🎯 Quick Reference](#quick-reference)** - Essential commands and tips
+
+## ✨ What You Get
+
+### 🤖 10+ Specialized Agents
+- **Control Agent** - Orchestrates all workflows
+- **Research Agent** - Deep technical research with web access
+- **Frontend/Backend Agents** - React, TypeScript, API development
+- **Testing Agent** - Auto-detects frameworks (Vitest, Jest, Playwright)
+- **Documentation Agent** - Generates comprehensive docs
+- **Planning, UX, Version Control** - Complete development lifecycle
+
+### ⚡ Powerful Slash Commands
+- **`/start`** - Deep codebase exploration (>95% understanding)
+- **`/documentation`** - Generate docs from codebase analysis
+- **`/ledger`** - System health monitoring & improvement metrics
+- **`/meta`** - Self-improvement system (uses Opus for meta-analysis)
+
+### 🔌 Smart Integrations
+- **7 MCP Servers** - External tool integrations
+- **Vector Database** - Semantic search across your docs
+- **Global Learning** - Improves across all projects
+- **Automation Hooks** - Safety guards and auto-formatting
+
+## 🎯 How It Works
+
+```bash
+# 1. Install once, use everywhere
+./install-enhanced.sh
+
+# 2. Analyze your codebase
+claude /start --deep
+
+# 3. Generate comprehensive docs
+claude /documentation
+
+# 4. Monitor & optimize
+claude /ledger --metrics
+```
+
+**Every interaction teaches the system.** Agents coordinate automatically, learn your patterns, and get smarter with each project.
+
+## 📋 Prerequisites
+
+- **Claude Code CLI** - [Download here](https://claude.ai/code)
+- **Node.js 16+** - For MCP servers
+- **Python 3.8+** - For vector database
+
+**Optional (enhances functionality):**
+- Firecrawl API key for web research
+- Vector database for semantic search
 # Claude Code Multi-Agent System - MANDATORY GLOBAL WORKFLOW
 
 ## 🤝 A Community-Driven Experimental Framework
@@ -53,271 +125,247 @@ This repository contains a complete multi-agent system designed to work globally
 
 ## 🤖 Agent Roster
 
-### Core Agents
 
-1. **Planning Agent** (Claude Opus 4)
-   - Strategic project planning and task distribution
-   - Multi-agent orchestration
-   - Dependency management
 
-2. **Control Agent**
-   - Quality gate enforcement
-   - Architecture compliance
-   - >99% confidence requirement for all changes
+## 🎯 Installation Methods
 
-3. **Research Agent**
-   - Documentation research using Firecrawl MCP
-   - Technology evaluation and feasibility assessment
-   - Best practices compilation and synthesis
+### Method 1: macOS Double-Click (Easiest)
+1. Download this repository
+2. Double-click `install.command` in Finder
+3. Follow the installation wizard
+4. Restart Claude Code
 
-4. **UX Agent**
-   - User experience design
-   - Wireframing and workflows
-   - Accessibility compliance (WCAG 2.1 AA)
-
-5. **UI Agent**
-   - React/TypeScript implementation
-   - Component development with >90% test coverage
-   - Tailwind CSS styling
-
-6. **Backend Agent**
-   - State management (Zustand)
-   - API development
-   - Database operations
-
-7. **Testing Agent**
-   - Quality assurance specialist
-   - Vitest, Playwright, Storybook testing
-   - Ensures 90%+ test coverage
-
-8. **Documentation Agent**
-   - API documentation
-   - Developer guides
-   - Architecture documentation
-
-9. **Version Control Agent**
-   - Git operations
-   - Branch management
-   - Release coordination
-
-### Meta Agent
-
-10. **Improvement Agent** (Dual-Layer)
-   - **Project Layer** (Claude Sonnet 4): Continuous observation during projects
-   - **Meta Layer** (Claude Opus 4): Post-project deep analysis
-   - Global learning across all projects
-
-## 📁 Directory Structure
-
-```
-~/.claude/
-├── agents/                 # Global agent configurations
-│   ├── planning-agent.md
-│   ├── control-agent.md
-│   ├── research-agent.md
-│   ├── ux-agent.md
-│   ├── ui-agent.md
-│   ├── backend-agent.md
-│   ├── testing-agent.md
-│   ├── documentation-agent.md
-│   ├── version-control-agent.md
-│   └── improvement-agent.md
-├── global-observation/     # Improvement agent's knowledge base
-│   └── observation-ledger.json
-├── ledgers/               # Agent task tracking
-│   ├── planning-tasks.json
-│   ├── control-tasks.json
-│   ├── testing-tasks.json
-│   └── ...
-├── observation/           # Observation infrastructure
-│   ├── activity-stream.json
-│   ├── agent-hooks.md
-│   └── ...
-├── agent-protocols.md     # Communication protocols
-└── task-registry.json     # Global task registry
-```
-
-**Repository Structure:**
-```
-Claude_Code_New/
-├── agents/                    # Core agent definitions
-├── ledgers/                   # Task tracking system
-├── observation/               # Learning infrastructure
-├── global-observation/        # Cross-project learning
-├── docs/                      # Canonical documentation (overview, architecture, dev-setup, etc.)
-├── .cursor/
-│   └── rules/                 # Cursor Project Rules (MDC)
-├── development_history/       # Development docs (gitignored)
-├── CLAUDE.md                  # Core workflow
-├── README.md                  # Entry point (links to docs/)
-├── install.sh                 # Installation script
-├── uninstall.sh               # Uninstallation script
-├── setup-firecrawl-mcp.sh     # Firecrawl MCP setup script
-├── settings-template.json     # Configuration template
-├── task-registry.json         # System coordination
-├── memory.md                  # Global memory
-├── agent-protocols.md         # Communication protocols
-├── example.env                # Environment variables template
-├── LICENSE                    # Legal information
-└── .gitignore                 # Version control exclusions
-```
-
-## 🚀 Installation
-
-### Prerequisites
-- Claude Code installed
-- Git
-- Unix-like environment (macOS/Linux)
-
-### Quick Install
-
-1. Clone this repository:
+### Method 2: Enhanced Command Line
 ```bash
-git clone https://github.com/[your-username]/claude-code-agent-system.git
+git clone <repository-url>
 cd claude-code-agent-system
+chmod +x install-enhanced.sh
+./install-enhanced.sh
 ```
 
-2. Configure environment variables:
+### Method 3: Original Installer (Backward Compatible)
 ```bash
-cp example.env .env
-# Edit .env with your actual API keys (especially Firecrawl for research-agent)
-```
-
-3. Run the installation script:
-```bash
+chmod +x install.sh
 ./install.sh
+./setup-mcp-servers.sh  # Configure MCP servers
 ```
 
-4. Set up Firecrawl MCP (for research-agent):
+**Detailed Instructions:** See [📖 Installation Guide](INSTALLATION-GUIDE.md)
+
+## ✅ Verify Installation
+
 ```bash
-./setup-firecrawl-mcp.sh
+# Check system health
+claude /ledger --check
+# Should show: 🎯 Overall Health: 95%+ (🟢 Excellent)
+
+# Test codebase analysis
+claude /start --quick
+
+# Check MCP servers
+claude mcp list
+# Should show 5-7 connected servers
 ```
 
-This will:
-- Create necessary directories in `~/.claude/`
-- Copy all agent configurations
-- Set up the observation infrastructure
-- Initialize the global observation ledger
+## 🎮 Quick Reference
 
-### Manual Installation
-
-If you prefer to install manually:
-
+### Essential Commands
 ```bash
-# Create directories
-mkdir -p ~/.claude/{agents,global-observation,ledgers,observation}
+# System health & diagnostics
+claude /ledger --check          # System health check
+claude /ledger --metrics        # Performance metrics
+claude /ledger --repair         # Fix system issues
 
-# Copy agent configurations
-cp agents/*.md ~/.claude/agents/
+# Codebase analysis & documentation
+claude /start --quick           # Quick codebase analysis
+claude /start --deep            # Deep exploration (recommended)
+claude /documentation           # Generate comprehensive docs
 
-# Copy observation infrastructure
-cp -r observation/* ~/.claude/observation/
-cp -r ledgers/* ~/.claude/ledgers/
+# System optimization
+claude /meta --verify           # Verify improvement system
+claude /meta --enhance          # Activate optimizations
 
-# Copy global files
-cp task-registry.json ~/.claude/
-cp agent-protocols.md ~/.claude/
-
-# Initialize global observation ledger
-cp global-observation/observation-ledger.json ~/.claude/global-observation/
+# MCP server management
+claude mcp list                 # Check server connections
+./setup-mcp-servers.sh          # Configure all servers
 ```
 
-## 🎯 Features
-
-### 🚨 MANDATORY WORKFLOW ENFORCEMENT
-- **Automatic Hook Injection**: Every prompt triggers workflow enforcement
-- **Cannot Be Bypassed**: Applies regardless of user request
-- **Control-Agent Delegation**: Automatic delegation to specialized agents
-- **Universal Application**: Works across ALL projects and sessions
-- **Memory Integration**: Persistent workflow awareness
-
-### Continuous Learning
-- Every project contributes to the global knowledge base
-- Patterns emerge across multiple implementations
-- Improvements are evidence-based and tested
-
-### Multi-Agent Coordination
-- Task distribution through ledger system
-- Dependency tracking and management
-- Quality gates at every stage
-- **Mandatory reporting protocols** between agents
-
-### Two-Layer Improvement System
-- **Project Layer**: Silent observation during development
-- **Meta Layer**: Deep analysis after project completion
-- Cross-project pattern recognition
-- Safe, tested improvements with user approval
-
-### Global Availability
-- Works across all Claude Code projects
-- Persistent knowledge accumulation
-- Shared learning between projects
-- **Enforced consistency** across all environments
-
-## 📊 How It Works
-
-### Architecture Overview
-
-The system operates with a **global + project-scoped** architecture:
-
-#### 🌍 Global Level (Shared Across All Projects)
+### Agent Coordination Examples
 ```bash
-~/.claude/
-├── agents/                    # Available in every project
-│   ├── planning-agent.md     # Strategic planning
-│   ├── control-agent.md      # Quality assurance  
-│   ├── improvement-agent.md  # Continuous learning
-│   └── ... (12 agents total)
-├── global-observation/       # Cross-project learning
-│   └── observation-ledger.json
-└── ...
+# Building features (agents coordinate automatically)
+claude "Build a user authentication system"
+claude "Create a dashboard with analytics"
+claude "Add a search feature with filters"
+
+# Code review & optimization
+claude "Review and optimize this React component"
+claude "Improve the performance of this API"
+claude "Add comprehensive tests for this module"
 ```
 
-#### 📁 Project Level (Specific to Each Project)
+## 🏗️ System Features
+
+### 🤖 Intelligent Agent Coordination
+- **Control Agent** orchestrates all workflows
+- **Specialized Agents** handle specific domains (React, APIs, testing)
+- **Quality Gates** ensure high standards
+- **Automatic Delegation** - Control agent never works directly
+
+### 🧠 Self-Improving System
+- **Global Learning** across all projects
+- **Pattern Recognition** identifies successful workflows
+- **Meta-Layer Intelligence** (Opus) improves the system itself
+- **Cross-Project Knowledge** transfer
+
+### 🔌 Advanced Integrations
+- **MCP Servers** for external tool access
+- **Vector Database** for semantic search
+- **Firecrawl** for web research
+- **GitHub Integration** for repository operations
+- **Browser Automation** with Puppeteer
+
+### ⚡ Enhanced Development
+- **Framework Detection** - Auto-configures for your stack
+- **Test Automation** - Supports Vitest, Jest, Playwright, Cypress
+- **Documentation Generation** - Creates comprehensive docs from code
+- **Safety Hooks** - Prevents dangerous operations
+- **Auto-formatting** - Code quality enforcement
+
+
+## 💡 Usage Examples
+
+### Building a New Feature
 ```bash
-/your-project/
-├── .claude/
-│   ├── settings.local.json   # Project-specific config
-│   ├── ledgers/             # Task tracking for this project
-│   └── project-data/        # Local observations
-└── your-files...
+claude "I want to build a task management system with user auth"
+
+# What happens automatically:
+# 1. Control-agent analyzes requirements
+# 2. Planning-agent creates architecture
+# 3. Research-agent finds best practices
+# 4. Backend-agent implements APIs
+# 5. Frontend-agent builds UI components
+# 6. Testing-agent ensures quality
+# 7. Documentation-agent updates docs
 ```
 
-### Workflow
-
-1. **Install Once**: Agents become available in ALL Claude Code projects
-2. **Auto-Activation**: Improvement Agent starts observing from first prompt
-3. **Global Learning**: Every project contributes to shared knowledge base
-4. **Cross-Project Benefits**: Patterns from Project A help Project B
-5. **Continuous Evolution**: System gets smarter with each project
-
-### Example Usage
-
+### Code Analysis & Improvement
 ```bash
-# Install system
-git clone https://github.com/emanuelgrammenos/claude-code-agent-system.git
-cd claude-code-agent-system
-./install.sh
+# Deep codebase exploration
+claude /start --deep
 
-# Now available everywhere
-cd ~/my-react-app     # All 12 agents available
-cd ~/my-python-app    # Same 12 agents available  
-cd ~/any-project      # Consistent experience everywhere
+# Generate comprehensive documentation
+claude /documentation
+
+# System optimization
+claude /meta --enhance
 ```
 
-### Learning Flow
-
-- **Project A**: UI Agent learns React best practices
-- **Project B**: UI Agent applies React knowledge to Vue project
-- **Project C**: Benefits from both React and Vue experiences
-- **Result**: Each project improves the entire system
-
-## 🔧 Configuration
-
-### Environment Variables
-The system uses environment variables for secure API key management:
-
+### Troubleshooting
 ```bash
+# System health check
+claude /ledger --check
+
+# If issues found:
+claude /ledger --repair
+
+# For detailed diagnostics:
+claude /ledger --metrics --verbose
+```
+
+## ⚙️ Configuration & Customization
+
+### MCP Server Setup
+The system uses 7 MCP servers for enhanced functionality:
+
+**Automatic Setup (5 servers):**
+- filesystem, github, memory, everything, puppeteer
+
+**Manual Configuration:**
+```bash
+# Run the setup wizard
+./setup-mcp-servers.sh
+
+# Configure Firecrawl (web research)
+# Get API key from https://firecrawl.dev
+
+# Configure Vector Database (semantic search)
+# Script will auto-detect existing databases
+```
+
+### Customizing Agents
+Edit agent files in `~/.claude/agents/` to customize behavior:
+```bash
+# Example: Modify the testing agent
+vim ~/.claude/agents/testing-agent.md
+
+# Each agent has:
+# - YAML frontmatter (name, tools, model)
+# - Role description and capabilities
+# - Specific workflows and standards
+```
+
+### Automation Hooks
+Custom hooks in `~/.claude/hooks/`:
+- `auto-format.sh` - Code formatting before commits
+- `guard-unsafe.sh` - Prevents dangerous operations
+
+## 📊 System Monitoring
+
+### Health Metrics
+```bash
+# Daily health check
+claude /ledger --check
+
+# Performance analysis
+claude /ledger --metrics
+
+# System optimization
+claude /meta --enhance
+```
+
+### Key Metrics Tracked
+- **System Health Score** (target: >90%)
+- **Agent Coordination Success** (target: >95%)
+- **Token Efficiency** (improvements per 1000 tokens)
+- **Cross-Project Learning** (knowledge transfer rate)
+- **Implementation Success** (observations → improvements)
+
+## 🔒 Security & Privacy
+
+- **Local Data Storage** - Everything in `~/.claude/`
+- **No External Transmission** - Data stays on your machine
+- **API Key Security** - Secure MCP server configuration
+- **Safety Hooks** - Prevent dangerous operations
+- **User Control** - Approve all system changes
+
+## 🆘 Need Help?
+
+### Built-in Diagnostics
+```bash
+claude /ledger --check --verbose    # Comprehensive health report
+claude /meta --report               # Meta-system analysis
+claude /ledger --repair             # Fix common issues
+```
+
+### Documentation
+- **[📖 Installation Guide](INSTALLATION-GUIDE.md)** - Complete setup
+- **[👤 User Guide](USER-GUIDE.md)** - How to use everything
+- **[🔧 Troubleshooting](TROUBLESHOOTING.md)** - Fix common problems
+
+### Common Issues
+- **Agents not responding?** → `claude /ledger --repair`
+- **MCP servers failing?** → `./setup-mcp-servers.sh`
+- **Slow performance?** → `claude /meta --enhance`
+- **Token limit hit?** → `claude /ledger --metrics`
+
+## 🤝 Contributing & Community
+
+- **Fork** for your own customizations
+- **Submit Issues** for bugs or feature requests
+- **Share Improvements** via pull requests
+- **Join Discussions** about best practices
+
+## 📝 License & Acknowledgments
 # Copy the example file
 cp example.env .env
 
@@ -385,6 +433,34 @@ Whether you're fixing bugs, proposing new features, improving documentation, or 
 
 MIT License - See LICENSE file for details
 
+**Built for [Claude Code](https://claude.ai/code) by Anthropic**
+
+Inspired by modern development practices and designed for continuous learning and improvement.
+
+---
+
+## 🚀 Get Started Now!
+
+### macOS Users
+**Double-click** `install.command` → Follow wizard → Done!
+
+### All Other Platforms  
+```bash
+git clone <this-repository>
+cd claude-code-agent-system
+./install-enhanced.sh
+```
+
+**Then:**
+```bash
+claude /start --deep        # Analyze your codebase
+claude /documentation       # Generate comprehensive docs
+claude /ledger --check      # Verify system health
+```
+
+**Welcome to intelligent development automation!** 🎉
+
+The system learns from every interaction and gets smarter with each project. Start simple, let agents coordinate, and watch your development workflow transform.
 ## 🙏 Acknowledgments
 
 - **Huge thanks to [Anthropic](https://anthropic.com)** for creating [Claude Code](https://claude.ai/code) – this amazing tool makes these experiments possible
