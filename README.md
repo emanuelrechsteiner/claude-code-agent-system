@@ -70,6 +70,58 @@ claude /ledger --metrics
 **Optional (enhances functionality):**
 - Firecrawl API key for web research
 - Vector database for semantic search
+# Claude Code Multi-Agent System - MANDATORY GLOBAL WORKFLOW
+
+## 🤝 A Community-Driven Experimental Framework
+
+**Hello, fellow AI enthusiasts!** 👋
+
+This project started as a personal exploration into what's possible with Claude Code. As a hobbyist developer and AI enthusiast, I've been fascinated by the potential of agentic workflows and wanted to push the boundaries of what Claude Code can do. What began as simple experiments with workflows and sub-agents has evolved into this experimental framework.
+
+**I'm not a professional developer** – I'm someone who loves coding as a hobby and is passionate about AI, particularly Claude Code. This repository represents my journey of discovery, experimentation, and lots of trial and error.
+
+### Why I'm Sharing This
+
+The framework is far from perfect. Many ideas are still experimental:
+- The improvement agent needs refinement
+- The strict agentic workflow with sub-agents requires repeated prompting to work consistently
+- There are rough edges and plenty of room for optimization
+
+**That's where you come in!** 🌟
+
+I'm opening this project to the community because I believe in the power of collective creativity. Whether you're a seasoned developer, another hobbyist like me, or someone just starting their AI journey – your ideas, improvements, and contributions are welcome.
+
+### Join the Experiment
+
+This is **not** a polished product – it's a playground for ideas. If you:
+- Love experimenting with AI and Claude Code
+- Have ideas for improving agentic workflows
+- Want to contribute to an open, collaborative project
+- Enjoy tinkering and problem-solving
+
+Then this project is for you! Let's build something amazing together, learn from each other, and push the boundaries of what's possible with Claude Code.
+
+**Every contribution matters**, whether it's fixing a bug, improving documentation, suggesting new agent behaviors, or completely reimagining how the system works. There are no bad ideas in experimentation!
+
+---
+
+## About the Framework
+
+A sophisticated multi-agent system for Claude Code that provides intelligent development assistance with **mandatory workflow enforcement**, automatic agent delegation, and continuous learning capabilities.
+
+## 🚨 NEW: MANDATORY GLOBAL WORKFLOW ENFORCEMENT
+
+**This system now includes MANDATORY workflow enforcement that applies to EVERY interaction:**
+
+- **Automatic Activation**: Workflow applies to all prompts without user request
+- **Cannot Be Bypassed**: Works regardless of prompt content
+- **Universal Application**: Active across ALL projects and sessions
+- **Mandatory Delegation**: Control-agent MUST delegate, never execute directly
+- **Hook-Based Enforcement**: Automatic injection of workflow context
+
+## 🌟 Overview
+
+This repository contains a complete multi-agent system designed to work globally with Claude Code across all your projects. For detailed documentation, see `docs/overview.md`, `docs/architecture.md`, and `docs/dev-setup.md`.
 
 ## 🤖 Agent Roster
 
@@ -314,6 +366,70 @@ claude /ledger --repair             # Fix common issues
 - **Join Discussions** about best practices
 
 ## 📝 License & Acknowledgments
+# Copy the example file
+cp example.env .env
+
+# Edit with your actual API keys
+vim .env  # or use your preferred editor
+```
+
+**Required for Research Agent:**
+- `firecrawl-api-key`: Get from [Firecrawl.dev](https://firecrawl.dev) for documentation scraping
+
+### Agent Permissions
+Each agent has specific tool permissions defined in their YAML frontmatter:
+- Planning Agent: Full access (`["*"]`)
+- Research Agent: Firecrawl MCP tools + standard tools
+- UX Agent: Read-only tools
+- UI/Backend Agents: Development tools
+- Control Agent: Full access for oversight
+
+### Customization
+You can customize agents by editing their configuration files in `~/.claude/agents/`. Each agent file contains:
+- YAML frontmatter with name, description, and tools
+- Detailed role description and competencies
+- Specific workflows and standards
+
+## 📈 Optimization Goals
+
+The Improvement Agent optimizes for:
+1. **Efficiency**: Faster task completion
+2. **Quality**: Fewer errors and bugs
+3. **Collaboration**: Better agent synchronization
+4. **Code**: Cleaner, simpler implementations
+5. **Architecture**: Better design patterns
+6. **Testing**: Higher first-pass success
+7. **Best Practices**: Latest frameworks and patterns
+
+## 🔐 Security & Privacy
+
+- All data stored locally in `~/.claude/`
+- No external data transmission
+- User approval required for all improvements
+- Safe rollback procedures for all changes
+
+## 🤝 Contributing
+
+**Your contributions are what make this experimental framework truly exciting!** 🚀
+
+Whether you're fixing bugs, proposing new features, improving documentation, or sharing wild ideas – all contributions are welcome:
+
+- **🐛 Found a bug?** Open an issue! Even small bugs teach us something.
+- **💡 Have an idea?** Start a discussion or draft a proposal.
+- **🔧 Want to fix something?** Submit a pull request – no contribution is too small.
+- **📚 Improve docs?** Documentation improvements are always appreciated.
+- **🧪 Experiment with agents?** Share your experiments and learnings.
+
+### Getting Started with Contributing
+
+1. Fork the repository
+2. Try the installation: `./install.sh`
+3. Experiment with the agents
+4. Share your discoveries, improvements, or questions
+
+**No expertise required** – curiosity and enthusiasm are the most important qualities!
+
+## 📝 License
 
 MIT License - See LICENSE file for details
 
@@ -345,3 +461,15 @@ claude /ledger --check      # Verify system health
 **Welcome to intelligent development automation!** 🎉
 
 The system learns from every interaction and gets smarter with each project. Start simple, let agents coordinate, and watch your development workflow transform.
+## 🙏 Acknowledgments
+
+- **Huge thanks to [Anthropic](https://anthropic.com)** for creating [Claude Code](https://claude.ai/code) – this amazing tool makes these experiments possible
+- **Inspired by the incredible AI community** and everyone pushing the boundaries of what's possible
+- **Special appreciation for all contributors** – this framework grows stronger with every idea, bug report, and improvement
+- **Gratitude to fellow hobbyists and enthusiasts** who believe in learning through experimentation
+
+This project exists because of the amazing tools and community around AI development. Thank you for being part of this journey! 🌟
+
+---
+
+**Note**: This system is designed to work with Claude Code and requires proper Claude Code installation and configuration.
